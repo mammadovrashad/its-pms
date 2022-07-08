@@ -1,8 +1,11 @@
+import BasicCard from './Components/Card'
 import firstWindow from './Pages/firstWindows/'
 const App = () => {
 
   return (
-    <div>App</div>
+    <div>
+      <BasicCard/>
+    </div>
   )
 }
 
