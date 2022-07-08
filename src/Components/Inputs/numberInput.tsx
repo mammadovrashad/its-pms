@@ -3,7 +3,8 @@ import './style.scss'
 
 const numberInput = () => {
     return (
-        <div>numberInput</div>
+        <div>Input Text</div>
+
     )
 }
 
