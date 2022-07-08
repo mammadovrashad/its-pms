@@ -1,8 +1,10 @@
-import React from 'react'
+import './style.css'
 
 const firstWindow = () => {
   return (
-    <div>index</div>
+    <div className='container'>
+
+    </div>
   )
 }
 
