@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import FirstWindow from './firstWindow'
 
-const Pages = () => {
+
+const Pages:React.FC = () => {
   return (
-    <div>Pages</div>
+    <Fragment>
+        <FirstWindow/>
+    </Fragment>
   )
 }
 
-export default Pages
+export default Pages;
