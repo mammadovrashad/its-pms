@@ -1,12 +1,11 @@
-import BasicCard from './Components/Card'
-import firstWindow from './Pages/firstWindows/'
-const App = () => {
-
+import { Fragment } from 'react';
+import Pages from './Pages'
+const App:React.FC = () => {
   return (
-    <div>
-      <BasicCard/>
-    </div>
+    <Fragment>
+       <Pages/>
+    </Fragment>
   )
 }
 
-export default App
+export default App;
