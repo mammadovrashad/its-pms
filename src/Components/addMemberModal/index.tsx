@@ -7,7 +7,7 @@ import { ThemeProvider } from '@emotion/react';
 import {  createTheme, Grid } from '@mui/material'
 import './style.css'
 import '../../Common/Fonts/fonts.css';
-import AddMemberTable from '../addMemberTable';
+import AddMemberTable from '../Tables/addMemberTable'
 const style = {
     position: 'absolute' as 'absolute',
     width: '35%',
