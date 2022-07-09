@@ -7,10 +7,10 @@ import Pages from './Pages'
 const App:React.FC = () => {
   return (
     <Fragment>
-      <AddPlanModal />
+     <AddPlanModal />
 <AddMemberModal />
-<DeleteMemberModal />
-<DeletePlanModal />
+<DeleteMemberModal /> 
+ <DeletePlanModal /> 
     </Fragment>
   )
 }
