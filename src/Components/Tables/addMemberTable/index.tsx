@@ -1,5 +1,5 @@
 import './style.css';
-import '../../Common/Fonts/fonts.css';
+import '../../../Common/Fonts/fonts.css';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
