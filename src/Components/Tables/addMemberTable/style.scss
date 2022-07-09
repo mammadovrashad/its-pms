@@ -1,4 +1,5 @@
-@import '../../Common/Fonts/fonts.css';
+@import '../../../Common/Fonts/fonts.css';
+@import '../../../Common/Color/color.scss';
 *{
     margin: 0px;
     padding: 0px;
@@ -11,7 +12,7 @@
 
     .MuiTableRow-root {
         th {
-            background-color: #068FDB;
+            background-color: $color-Lightblue;
             font-size: 16px;
             line-height: 16px;
             font-family: Poppins;
@@ -23,7 +24,7 @@
     justify-content: space-between;
     font-size: 14px;
     line-height: 14px;
-    color: #292D32;
+    color: $color-font;
     font-family: Poppins;
 }
 
