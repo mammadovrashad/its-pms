@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import AddMemberTable from '../../Components/addMemberTable'
+import AddMemberTable from '../../Components/Tables/addMemberTable'
 
 const firstWindow:React.FC = () => {
   return (
