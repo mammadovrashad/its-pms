@@ -1,3 +1,5 @@
+@import '../../../Common/Fonts/fonts.css';
+@import '../../../Common/Color/color.scss';
 * {
     margin: 0px;
     padding: 0px;
@@ -5,21 +7,22 @@
     font-weight: 400;
     font-style: normal;
   }
-  .MuiModal-root{
-    .MuiBox-root{
-        .MuiGrid-root{
-            .MuiTypography-root{
-               font-family: Poppins,sans-serif;
-               font-weight: 500;
-               font-size:18px;
-               line-height: 140%;
-               color:#000000;
-               text-align: center;
+//   .MuiModal-root{
+//     .MuiBox-root{
+//         .MuiGrid-root{
+//             .MuiTypography-root{
+//                font-family: Poppins,sans-serif;
+//                font-weight: 500;
+//                font-size:18px;
+//                line-height: 140%;
+//                color:#000000;
+//                text-align: center;
               
-            }
-        }
-    }
-}
+//             }
+//         }
+//     }
+// }
+
 .MuiModal-root{
     .MuiBackdrop-root{
       position: absolute;
@@ -28,11 +31,11 @@
       left:0px;
       top:0px;
       backdrop-filter: blur(6px);
-      background-color: rgba(244, 250, 255, 0.75);
+      background-color: $color-blur;
       
       }
     }
-    .style{
+    .styleplan{
         position: absolute;
         width: 88%;
         height:69%;
@@ -40,9 +43,9 @@
         top:0%;
         right:0%;
         bottom:0%;
-        background-color: #FFFFFF;
+        background-color: $color-white;
         border-radius: 6px;
-        box-shadow: 0px 2px 16px rgba(41, 45, 50, 0.12);
+        box-shadow: 0px 2px 16px $color-shadow;
         padding-top:32px;
         padding-left:16px;
         padding-right:16px;
