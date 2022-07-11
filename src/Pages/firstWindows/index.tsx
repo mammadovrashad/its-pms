@@ -3,7 +3,6 @@ import Textarea from '../../Components/Inputs/Textarea'
 import Combobox from '../../Components/Inputs/Combobox'
 import ComboCheckbox from '../../Components/Inputs/ComboCheckbox'
 import DisableInput from '../../Components/Inputs/DisableInput'
-import DateInput from '../../Components/Inputs/DateInput'
 
 const FirstWindow = () => {
 
