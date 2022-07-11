@@ -1,8 +1,10 @@
-import React from 'react'
+import FirstWindow from './firstWindows/index'
 
 const Pages = () => {
   return (
-    <div>Pages</div>
+    <div>
+      <FirstWindow />
+    </div>
   )
 }
 

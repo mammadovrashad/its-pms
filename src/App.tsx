@@ -1,8 +1,18 @@
-import firstWindow from './Pages/firstWindows/'
+import Pages from "./Pages/index"
+
+// From Material UI components
+import {
+  Container
+} from "@mui/material";
+
 const App = () => {
 
   return (
-    <div>App</div>
+    <div>
+      <Container maxWidth="lg" sx={{ padding: '20px' }}>
+        <Pages />
+      </Container>
+    </div>
   )
 }
 
