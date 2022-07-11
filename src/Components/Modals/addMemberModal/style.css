@@ -1,4 +1,4 @@
-@import '../../Common/Fonts/fonts.css';
+@import '../../../Common/Fonts/fonts.css';
 * {
   margin: 0px;
   padding: 0px;
@@ -7,12 +7,12 @@
   font-style: normal;
 }
 
-.MuiGrid-root .MuiTypography-root {
+.title1 {
   font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 24px;
-  color: rgb(6, 143, 219);
+  color: #068FDB;
 }
 
 .MuiModal-root .MuiBackdrop-root {
@@ -24,4 +24,20 @@
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   background-color: rgba(244, 250, 255, 0.75);
+}
+
+.styleaddMember {
+  position: absolute;
+  width: 35%;
+  height: 65%;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: 0px 2px 16px rgba(41, 45, 50, 0.12);
+  padding: 32px 36px 24px 24px;
+  margin: auto;
+  overflow: auto;
 }/*# sourceMappingURL=style.css.map */
