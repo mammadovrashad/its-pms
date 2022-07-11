@@ -1,0 +1,30 @@
+@import '../../../Common/Fonts/fonts.css';
+@import '../../../Common/Color/color.scss';
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.MuiTableHead-root {
+
+    .MuiTableRow-root {
+        th {
+            background-color: $color-Lightblue;
+            font-size: 16px;
+            line-height: 16px;
+            font-family: Poppins;
+        }
+    }
+}
+.MuiBox-root{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 14px;
+    color: $color-font;
+    font-family: Poppins;
+}
+
