@@ -25,7 +25,7 @@ padding:'0px 50px'}} alignItems='center' justifyContent='space-between'>
     <ItsLogo />
 </Grid>
 <Grid item>
-<Grid container alignItems='center' spacing={1} >
+<Grid container alignItems='center'  spacing={1.5}>
 <Grid item>
     <Avatar />
 </Grid>
@@ -34,8 +34,9 @@ padding:'0px 50px'}} alignItems='center' justifyContent='space-between'>
 </Grid>
 <Grid item>
 <Button
-        onClick={handleClick}
-        sx={{color:'black'}}
+
+ onClick={handleClick}
+sx={{color:'black'}}
       >
         <ExpandMoreIcon />
       </Button>
