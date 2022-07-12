@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.MuiTextField-root.MultilineInput,
+.MuiTextField-root.TextareaInput,
+.MuiAutocomplete-root.comboboxInput,
+.MuiTextField-root.DisableInput {
+
+    .MuiOutlinedInput-root {
+        color: #292D32;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 6px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+
+        &:hover .MuiOutlinedInput-notchedOutline {
+            border: 0.4px solid #0F3673;
+        }
+
+        &:not(:focus) .MuiOutlinedInput-notchedOutline {
+            border: 0.4px solid #0F3673;
+        }
+
+        .MuiOutlinedInput-notchedOutline {
+            border: 0.4px solid #0F3673;
+        }
+    }
+
+    .MuiInputLabel-root,
+    .MuiOutlinedInput-input {
+        line-height: 16px;
+    }
+
+    .MuiInputLabel-formControl.Mui-focused {
+        color: #292D32;
+        opacity: 0.4;
+    }
+
+    /* V2
+    .MuiInputLabel-root,
+    .MuiOutlinedInput-input,
+    .MuiInputLabel-formControl.Mui-focused {
+        color: #292D32;
+        opacity: 0.4;
+    }
+    */
+}
+
+.MuiTextField-root.MultilineInput {
+    .MuiOutlinedInput-root {
+        padding: 16px 15.58px;
+    }
+
+    .MuiOutlinedInput-input {
+        height: 18px !important;
+    }
+}
+
+.MuiTextField-root.TextareaInput {
+    .MuiOutlinedInput-root {
+        padding: 16px 23.87px;
+    }
+}
+
+.MuiAutocomplete-root.comboboxInput {
+    .MuiOutlinedInput-root {
+        padding: 16px;
+
+        .MuiAutocomplete-input {
+            padding: 0;
+            height: 18px;
+        }
+    }
+}
+
+.MuiTextField-root.DisableInput {
+    .MuiOutlinedInput-root {
+        background-color: rgba(15, 54, 115, 0.1);
+    }
+
+    .MuiOutlinedInput-input {
+        padding: 16px;
+        height: 18px;
+    }
+}

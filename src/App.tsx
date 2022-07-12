@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+const App = () => {
+
+  return (
+    <div>
+    </div>
+=======
 import { Fragment } from 'react';
 import AddMemberModal from './Components/Modals/addMemberModal';
 import AddPlanModal from './Components/Modals/addPlanModal';
@@ -17,6 +24,7 @@ const App:React.FC = () => {
     <EditPlanModal />
     
     </Fragment>
+>>>>>>> origin/master
   )
 }
 
