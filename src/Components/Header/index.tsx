@@ -9,10 +9,10 @@ import { Button, Grid, Menu, MenuItem} from '@mui/material';
 const Header:React.FC=()=>{
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
-    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const handleDropClick = (event: React.MouseEvent<HTMLButtonElement>) => {
       setAnchorEl(event.currentTarget);
     };
-    const handleClose = () => {
+    const handleDropClose = () => {
       setAnchorEl(null);
     };
 
@@ -34,8 +34,7 @@ padding:'0px 50px'}} alignItems='center' justifyContent='space-between'>
 </Grid>
 <Grid item>
 <Button
-
- onClick={handleClick}
+ onClick={handleDropClick}
 sx={{color:'black'}}
       >
         <ExpandMoreIcon />
@@ -43,9 +42,9 @@ sx={{color:'black'}}
       <Menu
         anchorEl={anchorEl}
         open={open}
-        onClose={handleClose}
+        onClose={handleDropClose}
       >
-        <MenuItem onClick={handleClose}>
+        <MenuItem onClick={handleDropClose}>
         <LogoutIcon></LogoutIcon>Profildən çıx</MenuItem>
       </Menu>
 </Grid>

@@ -33,9 +33,13 @@ const AddPlanModal:React.FC=()=>{
       >
         <Box className='styleplan'>
     <Grid container>
-        <Grid item xs={12}>
+        <Grid item >
         <Button onClick ={handleClose}>Ləğv et</Button>
         </Grid>
+        <Grid item >
+        <Button onClick ={handleClose}>Yadda Saxla</Button>
+        </Grid>
+        
     </Grid>
     </Box>
     </Modal>
