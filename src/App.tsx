@@ -13,11 +13,10 @@ const App: React.FC = () => {
     <Fragment>
       {/* <Header />
     <AddMemberModal />
-     <DeleteMemberModal />
+     {/* <DeleteMemberModal />
 <AddPlanModal /> 
      <DeletePlanModal />
     <EditPlanModal />  */}
-    <AddMemberTable/>
     </Fragment>
   )
 }
