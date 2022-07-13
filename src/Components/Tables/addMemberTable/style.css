@@ -13,6 +13,9 @@
   line-height: 16px;
   font-family: Poppins;
 }
+.MuiTableHead-root .container .MuiTable-root .MuiTableBody .MuiTableRow-root {
+  background-color: red!important;
+}
 
 .MuiBox-root {
   display: flex;
