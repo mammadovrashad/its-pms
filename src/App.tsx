@@ -17,6 +17,7 @@ const App: React.FC = () => {
 <AddPlanModal /> 
      <DeletePlanModal />
     <EditPlanModal />  */}
+    <AddMemberTable/>
     </Fragment>
   )
 }
