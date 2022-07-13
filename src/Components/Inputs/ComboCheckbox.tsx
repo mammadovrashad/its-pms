@@ -5,23 +5,23 @@ import {
     Checkbox
 } from '@mui/material';
 
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-
 // Style
 import './style.scss';
+
+// Import Icon
+import Icon from './ChevronDownIcon';
 
 const Combobox = ({ emp }: any) => {
 
     return (
         <Autocomplete
+            popupIcon={<Icon />}
             multiple
             className="comboboxInput"
             id="checkboxes-tags-demo"
             options={emp}
             disableCloseOnSelect
             getOptionLabel={(option: any) => option.label}
-            popupIcon={<ExpandMoreIcon />}
             renderOption={(props, option, { selected }) => (
                 <li key={emp.id} {...props}>
                     <Checkbox

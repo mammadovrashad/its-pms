@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import CalendarIcon from './CalendarIcon'; 
 
 // date-fns
 import { LocalizationProvider, DesktopDatePicker } from '@mui/x-date-pickers';
@@ -20,11 +21,14 @@ const DateInput = ({ labelName }: any) => {
     return (
         <LocalizationProvider dateAdapter={AdapterDateFns}>
             <DesktopDatePicker
+                components={{
+                    OpenPickerIcon: CalendarIcon
+                }}
                 label={labelName}
                 inputFormat="dd.MM.yyyy"
                 value={value}
                 onChange={handleChange}
-                renderInput={(params) => <TextField {...params} className="DateInput"/>}
+                renderInput={(params) => <TextField {...params} className="DateInput" />}
             />
         </LocalizationProvider>
     );
