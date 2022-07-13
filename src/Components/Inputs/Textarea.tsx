@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 // From Material UI components
 import {
     TextField
@@ -6,11 +8,21 @@ import {
 // Style
 import './style.scss';
 
-const Textarea = () => {
+const Textarea = ({ labelName, maxCharCount }: any) => {
+
+    const [char, setChar] = useState("");
+
     return (
         <TextField
             id="outlined-textarea"
-            label="Layihənin qısa izahı"
+            helperText={`${char.length}/${maxCharCount}`}
+            inputProps={{ maxLength: maxCharCount }}
+            value={char}
+            onChange={(event) => {
+                const { value } = event.target;
+                setChar(value);
+            }}
+            label={labelName}
             fullWidth
             multiline
             rows={3}

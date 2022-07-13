@@ -3,7 +3,9 @@
 .MuiTextField-root.MultilineInput,
 .MuiTextField-root.TextareaInput,
 .MuiAutocomplete-root.comboboxInput,
-.MuiTextField-root.DisableInput {
+.MuiTextField-root.DisableInput,
+.MuiTextField-root.DateInput,
+.MuiTextField-root.SelectInput {
 
     .MuiOutlinedInput-root {
         color: #292D32;
@@ -63,6 +65,17 @@
     .MuiOutlinedInput-root {
         padding: 16px 23.87px;
     }
+
+    .MuiFormHelperText-root {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        opacity: 0.4;
+        margin-left: 0;
+        margin: 8px 0 0 0;
+    }
 }
 
 .MuiAutocomplete-root.comboboxInput {
@@ -84,5 +97,30 @@
     .MuiOutlinedInput-input {
         padding: 16px;
         height: 18px;
+    }
+}
+
+.MuiTextField-root.DateInput,
+.MuiTextField-root.SelectInput {
+    width: 100%;
+
+    .MuiOutlinedInput-input {
+        padding: 16px;
+        height: 18px;
+    }
+}
+
+.MuiTextField-root.SelectInput {
+    .MuiOutlinedInput-root {
+        background-color: green;
+        color: white
+    }
+
+    .MuiInputLabel-root {
+        top: -3px;
+    }
+
+    .MuiOutlinedInput-input {
+        min-height: 18px;
     }
 }
