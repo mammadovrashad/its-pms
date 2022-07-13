@@ -86,7 +86,7 @@
 }
 
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root {
-  padding: 16px 23.87px;
+  padding: 16px 2px 16px 23.87px;
 }
 .MuiTextField-root.TextareaInput .MuiFormHelperText-root {
   font-family: "Poppins";
@@ -97,6 +97,16 @@
   opacity: 0.4;
   margin-left: 0;
   margin: 8px 0 0 0;
+}
+.MuiTextField-root.TextareaInput .MuiOutlinedInput-input {
+  /* Handle */
+}
+.MuiTextField-root.TextareaInput .MuiOutlinedInput-input::-webkit-scrollbar {
+  width: 6px;
+}
+.MuiTextField-root.TextareaInput .MuiOutlinedInput-input::-webkit-scrollbar-thumb {
+  background-color: #D9D9D9;
+  border-radius: 24px;
 }
 
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root {
