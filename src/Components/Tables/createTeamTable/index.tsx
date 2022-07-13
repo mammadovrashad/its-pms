@@ -42,8 +42,6 @@ const CreateTeamTable: React.FC = () => {
     },
 
   ]);
-
-
   return (
       <div className="add-team">
         <TableContainer component={Paper}>
@@ -55,7 +53,7 @@ const CreateTeamTable: React.FC = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {memberData.map((row) => (
+            {memberData.map((row:any) => (
               <StyledTableRow key={row.id}>
                 <StyledTableCell>
                   {row.profession}
