@@ -1,19 +1,11 @@
-<<<<<<< HEAD
-const Pages = () => {
-  return (
-    <div>
-    </div>
-=======
 import React, { Fragment } from 'react'
-import FirstWindow from './firstWindow'
-
+import FirstWindows from './firstWindows'
 
 const Pages:React.FC = () => {
   return (
     <Fragment>
-        <FirstWindow/>
+        <FirstWindows/>
     </Fragment>
->>>>>>> origin/master
   )
 }
 

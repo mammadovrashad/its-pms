@@ -5,32 +5,25 @@ import {
     Checkbox
 } from '@mui/material';
 
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+
 // Style
 import './style.scss';
 
-const position = [
-    { id: 1, label: 'Nərmin Ağayeva' },
-    { id: 2, label: 'Nərmin Ağayeva' },
-    { id: 3, label: 'Nərmin Ağayeva' },
-    { id: 4, label: 'Nərmin Ağayeva' },
-    { id: 5, label: 'Nərmin Ağayeva' },
-    { id: 6, label: 'Nərmin Ağayeva' },
-    { id: 7, label: 'Nərmin Ağayeva' },
-    { id: 8, label: 'Nərmin Ağayeva' },
-];
-
-const Combobox = () => {
+const Combobox = ({ emp }: any) => {
 
     return (
         <Autocomplete
             multiple
             className="comboboxInput"
             id="checkboxes-tags-demo"
-            options={position}
+            options={emp}
             disableCloseOnSelect
-            getOptionLabel={(option) => option.label}
+            getOptionLabel={(option: any) => option.label}
+            popupIcon={<ExpandMoreIcon />}
             renderOption={(props, option, { selected }) => (
-                <li key={option.id} {...props}>
+                <li key={emp.id} {...props}>
                     <Checkbox
                         checked={selected}
                     />

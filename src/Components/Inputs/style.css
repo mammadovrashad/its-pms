@@ -2,7 +2,9 @@
 .MuiTextField-root.MultilineInput,
 .MuiTextField-root.TextareaInput,
 .MuiAutocomplete-root.comboboxInput,
-.MuiTextField-root.DisableInput {
+.MuiTextField-root.DisableInput,
+.MuiTextField-root.DateInput,
+.MuiTextField-root.SelectInput {
   /* V2
     .MuiInputLabel-root,
     .MuiOutlinedInput-input,
@@ -16,7 +18,9 @@
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-root,
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root,
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root,
-.MuiTextField-root.DisableInput .MuiOutlinedInput-root {
+.MuiTextField-root.DisableInput .MuiOutlinedInput-root,
+.MuiTextField-root.DateInput .MuiOutlinedInput-root,
+.MuiTextField-root.SelectInput .MuiOutlinedInput-root {
   color: #292D32;
   background-color: #FFFFFF;
   border: none;
@@ -31,21 +35,27 @@
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
-.MuiTextField-root.DisableInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+.MuiTextField-root.DisableInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.MuiTextField-root.DateInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.MuiTextField-root.SelectInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
   border: 0.4px solid #0F3673;
 }
 
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline,
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline,
-.MuiTextField-root.DisableInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline {
+.MuiTextField-root.DisableInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline,
+.MuiTextField-root.DateInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline,
+.MuiTextField-root.SelectInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline {
   border: 0.4px solid #0F3673;
 }
 
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline,
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline,
-.MuiTextField-root.DisableInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+.MuiTextField-root.DisableInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline,
+.MuiTextField-root.DateInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline,
+.MuiTextField-root.SelectInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
   border: 0.4px solid #0F3673;
 }
 
@@ -56,14 +66,20 @@
 .MuiAutocomplete-root.comboboxInput .MuiInputLabel-root,
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-input,
 .MuiTextField-root.DisableInput .MuiInputLabel-root,
-.MuiTextField-root.DisableInput .MuiOutlinedInput-input {
+.MuiTextField-root.DisableInput .MuiOutlinedInput-input,
+.MuiTextField-root.DateInput .MuiInputLabel-root,
+.MuiTextField-root.DateInput .MuiOutlinedInput-input,
+.MuiTextField-root.SelectInput .MuiInputLabel-root,
+.MuiTextField-root.SelectInput .MuiOutlinedInput-input {
   line-height: 16px;
 }
 
 .MuiTextField-root.MultilineInput .MuiInputLabel-formControl.Mui-focused,
 .MuiTextField-root.TextareaInput .MuiInputLabel-formControl.Mui-focused,
 .MuiAutocomplete-root.comboboxInput .MuiInputLabel-formControl.Mui-focused,
-.MuiTextField-root.DisableInput .MuiInputLabel-formControl.Mui-focused {
+.MuiTextField-root.DisableInput .MuiInputLabel-formControl.Mui-focused,
+.MuiTextField-root.DateInput .MuiInputLabel-formControl.Mui-focused,
+.MuiTextField-root.SelectInput .MuiInputLabel-formControl.Mui-focused {
   color: #292D32;
   opacity: 0.4;
 }
@@ -78,6 +94,17 @@
 
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root {
   padding: 16px 23.87px;
+}
+
+.MuiTextField-root.TextareaInput .MuiFormHelperText-root {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  opacity: 0.4;
+  margin-left: 0;
+  margin: 8px 0 0 0;
 }
 
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root {
@@ -96,5 +123,29 @@
 .MuiTextField-root.DisableInput .MuiOutlinedInput-input {
   padding: 16px;
   height: 18px;
+}
+
+.MuiTextField-root.DateInput,
+.MuiTextField-root.SelectInput {
+  width: 100%;
+}
+
+.MuiTextField-root.DateInput .MuiOutlinedInput-input,
+.MuiTextField-root.SelectInput .MuiOutlinedInput-input {
+  padding: 16px;
+  height: 18px;
+}
+
+.MuiTextField-root.SelectInput .MuiOutlinedInput-root {
+  background-color: green;
+  color: white;
+}
+
+.MuiTextField-root.SelectInput .MuiInputLabel-root {
+  top: -3px;
+}
+
+.MuiTextField-root.SelectInput .MuiOutlinedInput-input {
+  min-height: 18px;
 }
 /*# sourceMappingURL=style.css.map */

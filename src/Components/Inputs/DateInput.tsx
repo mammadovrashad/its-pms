@@ -1,17 +1,16 @@
 import { useState } from 'react'
 
-// From Material UI components
-import {
-    TextField
-} from '@mui/material';
+// date-fns
+import { LocalizationProvider, DesktopDatePicker } from '@mui/x-date-pickers';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { TextField } from '@mui/material';
 
-import {
-    DesktopDatePicker
-} from '@mui/x-date-pickers';
+// Style
+import './style.scss';
 
-const DateInput = () => {
+const DateInput = ({ labelName }: any) => {
     const [value, setValue] = useState<Date | null>(
-        new Date('2014-08-18T21:11:54'),
+        new Date(),
     );
 
     const handleChange = (newValue: Date | null) => {
@@ -19,14 +18,16 @@ const DateInput = () => {
     };
 
     return (
-        <DesktopDatePicker
-            label="Date desktop"
-            inputFormat="MM/dd/yyyy"
-            value={value}
-            onChange={handleChange}
-            renderInput={(params) => <TextField {...params} />}
-        />
-    )
+        <LocalizationProvider dateAdapter={AdapterDateFns}>
+            <DesktopDatePicker
+                label={labelName}
+                inputFormat="dd.MM.yyyy"
+                value={value}
+                onChange={handleChange}
+                renderInput={(params) => <TextField {...params} className="DateInput"/>}
+            />
+        </LocalizationProvider>
+    );
 }
 
-export default DateInput
+export default DateInput;
