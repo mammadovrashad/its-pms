@@ -63,7 +63,7 @@
 
 .MuiTextField-root.TextareaInput {
     .MuiOutlinedInput-root {
-        padding: 16px 23.87px;
+        padding: 16px 2px 16px 23.87px;
     }
 
     .MuiFormHelperText-root {
@@ -75,6 +75,18 @@
         opacity: 0.4;
         margin-left: 0;
         margin: 8px 0 0 0;
+    }
+
+    .MuiOutlinedInput-input {
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background-color: #D9D9D9;
+            border-radius: 24px;
+        }
     }
 }
 
