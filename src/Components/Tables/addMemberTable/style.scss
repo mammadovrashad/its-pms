@@ -18,6 +18,18 @@
             font-family: Poppins;
         }
     }
+.container{
+    .MuiTable-root {
+        .MuiTableBody{
+            .MuiTableRow-root{
+                background-color: red;
+            }
+        }
+    }
+}
+    
+
+
 }
 .MuiBox-root{
     display: flex;

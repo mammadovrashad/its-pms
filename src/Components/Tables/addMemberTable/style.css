@@ -1,9 +1,8 @@
-@import url(d:\Desktop SSD\Programming\ITS\its-pms\src\Common\Fonts\fonts.css);
+@import '../../../Common/Fonts/fonts.css';
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-weight: 400;
   font-style: normal;
 }
@@ -14,17 +13,15 @@
   line-height: 16px;
   font-family: Poppins;
 }
+.MuiTableHead-root .container .MuiTable-root .MuiTableBody .MuiTableRow-root {
+  background-color: red!important;
+}
 
 .MuiBox-root {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 14px;
   color: #292D32;
   font-family: Poppins;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

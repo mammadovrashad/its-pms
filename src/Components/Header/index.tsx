@@ -4,7 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ItsLogo from './img/Asset13';
 import Avatar from './img/Avatar';
 import LogoutIcon from '@mui/icons-material/Logout';
-import { Button, Grid, Menu, MenuItem} from '@mui/material';
+import { Grid, Menu, MenuItem} from '@mui/material';
 
 const Header:React.FC=()=>{
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -20,7 +20,7 @@ const Header:React.FC=()=>{
 <section className='container-header'> 
 <Grid container sx={{width:"100%",
 height:'100%',
-padding:'0px 50px'}} alignItems='center' justifyContent='space-between'>
+padding:'0px 45px'}} alignItems='center' justifyContent='space-between'>
 <Grid item >
     <ItsLogo />
 </Grid>
@@ -33,19 +33,30 @@ padding:'0px 50px'}} alignItems='center' justifyContent='space-between'>
     <p className='title-style'>Ağarəhim Quluzadə</p>
 </Grid>
 <Grid item>
-<Button
+<button
+className='btn'
+ id="basic-button"
+ aria-controls={open ? 'basic-menu' : undefined}
+ aria-haspopup="true"
+ aria-expanded={open ? 'true' : undefined}
  onClick={handleDropClick}
-sx={{color:'black'}}
+
       >
         <ExpandMoreIcon />
-      </Button>
+      </button>
       <Menu
+        id="basic-menu"
         anchorEl={anchorEl}
         open={open}
+        MenuListProps={{
+          'aria-labelledby': 'basic-button',
+        }}
         onClose={handleDropClose}
       >
         <MenuItem onClick={handleDropClose}>
-        <LogoutIcon></LogoutIcon>Profildən çıx</MenuItem>
+        <LogoutIcon></LogoutIcon>
+        Profildən çıx
+        </MenuItem>
       </Menu>
 </Grid>
 </Grid>
