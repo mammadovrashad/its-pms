@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import AddMemberTable from './Components/Tables/addMemberTable';
+import CreateTeamTable from './Components/Tables/createTeamTable';
 // import AddMemberModal from './Components/Modals/addMemberModal';
 // import AddPlanModal from './Components/Modals/addPlanModal';
 // import DeleteMemberModal from './Components/Modals/deleteMemberModal';
