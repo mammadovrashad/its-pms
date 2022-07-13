@@ -4,7 +4,8 @@ import {
     Autocomplete
 } from '@mui/material';
 
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+// Import Icon
+import Icon from './ChevronDownIcon';
 
 // Style
 import './style.scss';
@@ -13,13 +14,13 @@ const Combobox = ({ labelName, placeholder, position }: any) => {
 
     return (
         <Autocomplete
-            multiple
             disablePortal
             id="combo-box-demo"
             options={position}
             renderInput={(params) => <TextField {...params} label={labelName} placeholder={placeholder} />}
             className="comboboxInput"
             popupIcon={<ExpandMoreIcon />}
+            popupIcon={<Icon />}
         />
     )
 }
