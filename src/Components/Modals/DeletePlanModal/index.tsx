@@ -33,9 +33,9 @@ import '../../../Common/Fonts/fonts.css';
   <Modal
       open={open}
       >
-        <div className='container-delplan'>
-          <div className='x-divdel'><Button onClick={handleClose}><ClearIcon /></Button></div>
+       
           <Box className ='styledeleteplan'>
+            <div className='div-delplan'><ClearIcon /></div>
         <Grid  container  justifyContent='center' alignItems='center' sx={{width:'100%',height:'100%'}} spacing={0}>
         <Grid item  >
         <p className='title3'>Fəaliyyət planını silmək istədiyinizə əminsiniz mi ?</p>
@@ -47,7 +47,7 @@ import '../../../Common/Fonts/fonts.css';
        
     </Grid>
     </Box>
-        </div>
+      
         
     </Modal>
   </ThemeProvider>

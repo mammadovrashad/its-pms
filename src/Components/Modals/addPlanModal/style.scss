@@ -53,16 +53,10 @@
         overflow:auto
     }
 
-    .container-plan{
-      display:flex;
-      justify-content: flex-end;
-      flex-direction: column;
+    .div-addplan{
+  position: absolute;
+right: 0%;
+top: 0%;
     }
-    .x-div{
-      transform: translate(1310px, 50px);
-      z-index: 1;
-      width:34px;
-      height:34px;
-     
-    }
+  
 
