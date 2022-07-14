@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+.MuiButton-root.customContainedButton {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.MuiButton-root.customContainedButton {
+  background: #068FDB;
+  border-radius: 6px;
+}
+
+.MuiButton-root.customContainedButton .css-sghohy-MuiButtonBase-root-MuiButton-root {
+  text-transform: lowercase;
+}
+/*# sourceMappingURL=style.css.map */

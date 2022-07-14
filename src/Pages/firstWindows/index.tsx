@@ -5,6 +5,9 @@ import ComboCheckbox from '../../Components/Inputs/ComboCheckbox'
 import DisableInput from '../../Components/Inputs/DisableInput'
 import DateInput from '../../Components/Inputs/DateInput'
 import SelectInput from '../../Components/Inputs/SelectInput'
+import ContainedButton from '../../Components/Buttons/ContainedButton'
+import AbsoluteCloseButton from '../../Components/Buttons/AbsoluteCloseButton'
+import ActionButton from '../../Components/Buttons/ActionButton'
 
 
 const FirstWindow = () => {
@@ -82,6 +85,51 @@ const FirstWindow = () => {
       <DateInput
         labelName={"Bitmə tarixi"}
       />
+
+      <br />
+      <br />
+      <br />
+
+      <ContainedButton
+        text={"yeni layihə yarat"}
+        paddingSize={"16px 32px"}
+        variantName={"contained"}
+        disable={false}
+      />
+      <br />
+      <br />
+
+      <ContainedButton
+        text={"yadda saxla"}
+        paddingSize={"16px 24px"}
+        variantName={"contained"}
+      />
+      <br />
+      <br />
+
+      <ContainedButton
+        text={"sil"}
+        paddingSize={"16px 50.5px"}
+        variantName={"contained"}
+      />
+      <br />
+      <br />
+
+      <ContainedButton
+        text={"ləğv et"}
+        paddingSize={"16px 32px"}
+        variantName={"outlined"}
+      />
+
+      <br />
+      <br />
+
+      <AbsoluteCloseButton />
+
+      <br />
+      <br />
+
+      <ActionButton />
 
     </div>
   )
