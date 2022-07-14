@@ -44,4 +44,10 @@
   padding-bottom: 64px;
   margin: auto;
   overflow: auto;
+}
+
+.div-delmember {
+  position: absolute;
+  right: 0%;
+  top: 0%;
 }/*# sourceMappingURL=style.css.map */

@@ -5,12 +5,11 @@ import ComboCheckbox from '../../Components/Inputs/ComboCheckbox'
 import DisableInput from '../../Components/Inputs/DisableInput'
 import DateInput from '../../Components/Inputs/DateInput'
 import SelectInput from '../../Components/Inputs/SelectInput'
-import { emphasize } from '@mui/material'
 
 
 const FirstWindow = () => {
 
-   const position = [
+  const position = [
     { id: 1, label: 'Layihə rəhbəri' },
     { id: 2, label: 'Məhsul sahibi' },
     { id: 3, label: 'UI/UX dizayner' },
@@ -33,12 +32,12 @@ const FirstWindow = () => {
   ]
 
   const stage = [
-    {id: 1, label: 'Analiz'},
-    {id: 2, label: 'Dizayn'},
-    {id: 3, label: 'Development'},
-    {id: 4, label: 'Test'},
-    {id: 5, label: 'Demo'}, 
-    {id: 6, label: 'Tətbiq'}, 
+    { id: 1, label: 'Analiz' },
+    { id: 2, label: 'Dizayn' },
+    { id: 3, label: 'Development' },
+    { id: 4, label: 'Test' },
+    { id: 5, label: 'Demo' },
+    { id: 6, label: 'Tətbiq' },
   ]
 
   return (
@@ -68,6 +67,9 @@ const FirstWindow = () => {
         position={position}
       />
 
+      <SelectInput />
+
+
       <ComboCheckbox
         emp={emp}
       />
@@ -81,10 +83,9 @@ const FirstWindow = () => {
         labelName={"Bitmə tarixi"}
       />
 
-      <SelectInput />
     </div>
   )
-  
+
 }
 
 export default FirstWindow;

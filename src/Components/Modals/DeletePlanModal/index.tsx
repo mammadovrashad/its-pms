@@ -3,8 +3,9 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import { ThemeProvider } from '@emotion/react';
-import {  createTheme, Grid } from '@mui/material'
-import './style.css'
+import {  createTheme, Grid} from '@mui/material';
+import ClearIcon from '@mui/icons-material/Clear';
+import './style.css';
 import '../../../Common/Fonts/fonts.css';
 
   const theme = createTheme({
@@ -32,7 +33,9 @@ import '../../../Common/Fonts/fonts.css';
   <Modal
       open={open}
       >
-        <Box className ='styledeleteplan'>
+       
+          <Box className ='styledeleteplan'>
+            <div className='div-delplan'><ClearIcon /></div>
         <Grid  container  justifyContent='center' alignItems='center' sx={{width:'100%',height:'100%'}} spacing={0}>
         <Grid item  >
         <p className='title3'>Fəaliyyət planını silmək istədiyinizə əminsiniz mi ?</p>
@@ -44,6 +47,8 @@ import '../../../Common/Fonts/fonts.css';
        
     </Grid>
     </Box>
+      
+        
     </Modal>
   </ThemeProvider>
    
