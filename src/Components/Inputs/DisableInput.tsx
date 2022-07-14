@@ -16,6 +16,7 @@ const DisableInput = ({ labelName, defaultValue }: any) => {
             fullWidth
             disabled
             className="DisableInput"
+            // sx={{margin: '20px 0'}}
         />
     )
 }
