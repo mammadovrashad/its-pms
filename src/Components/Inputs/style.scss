@@ -5,8 +5,7 @@
 .MuiAutocomplete-root.comboboxInput,
 .MuiTextField-root.DisableInput,
 .MuiTextField-root.DateInput,
-.MuiTextField-root.SelectInput {
-
+.MuiFormControl-root.SelectInput {
     .MuiOutlinedInput-root {
         color: #292D32;
         background-color: #FFFFFF;
@@ -54,12 +53,12 @@
 .MuiAutocomplete-popper {
 
     li:hover {
-        background-color:#068FDB !important;
+        background-color: #068FDB !important;
         color: #FFFFFF;
     }
 
     li:focus {
-        background-color:#068FDB !important;
+        background-color: #068FDB !important;
     }
 
     .MuiAutocomplete-listbox {
@@ -151,12 +150,33 @@
         background-color: green;
         color: white
     }
+}
 
+.MuiFormControl-root.SelectInput {
     .MuiInputLabel-root {
         top: -3px;
     }
 
-    .MuiOutlinedInput-input {
-        min-height: 18px;
+    .MuiOutlinedInput-root {
+        cursor: pointer;
+
+        .MuiSelect-select {
+            padding: 16px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        .MuiSelect-select {
+            min-height: 16px;
+        }
+
+        svg {
+            position: absolute;
+            top: calc(50% - 11px);
+            right: 9px;
+        }
     }
 }
