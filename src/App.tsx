@@ -14,11 +14,11 @@ const App: React.FC = () => {
   return (
     <Fragment>
       <Header />
-    <AddMemberModal />
+      <AddMemberModal />
       <DeleteMemberModal />
-<AddPlanModal /> 
-     <DeletePlanModal />
-    <EditPlanModal /> 
+      <AddPlanModal />
+      <DeletePlanModal />
+      <EditPlanModal />
     </Fragment>
   )
 }

@@ -28,7 +28,7 @@ const DateInput = ({ labelName }: any) => {
                 inputFormat="dd.MM.yyyy"
                 value={value}
                 onChange={handleChange}
-                renderInput={(params) => <TextField {...params} className="DateInput" />}
+                renderInput={(params) => <TextField {...params}  className="DateInput" />}
             />
         </LocalizationProvider>
     );
