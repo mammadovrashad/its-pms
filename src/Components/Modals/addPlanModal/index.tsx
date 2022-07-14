@@ -12,6 +12,7 @@ import Combobox from '../../Inputs/Combobox';
 import ComboCheckbox from '../../Inputs/ComboCheckbox'
 import MultilineInput from '../../Inputs/MultilineInput';
 import SelectInput from '../../Inputs/SelectInput';
+import Textarea from '../../Inputs/Textarea';
 
   const theme = createTheme({
     typography: {
@@ -56,30 +57,32 @@ const AddPlanModal:React.FC=()=>{
       open={open}
       >
         <Box className='styleplan'>
-    <Grid container>
-      <Grid container justifyContent='space-around'>
-        <Grid item xs={2}><DisableInput labelName='Task nömrəsi' defaultValue='1.2' /></Grid>
-        <Grid item xs={2}><Combobox labelName='Mərhələ' placeholder='Mərhələ' position ={stage}/></Grid>
-        <Grid item xs={2}><ComboCheckbox  emp={emp}/></Grid>
-        <Grid item xs={2}><DateInput labelName='Başlama tarixi' /></Grid>
-        <Grid item xs={2}><DateInput labelName='Bitmə tarixi' /></Grid>
+    <Grid container  alignItems='center' sx={{width:'100%', height:'100%'}}>
+      <Grid container justifyContent='space-between' columnSpacing={2}  >
+        <Grid item xs={2.4}><DisableInput labelName='Task nömrəsi' defaultValue='1.2' /></Grid>
+        <Grid item xs={2.4}><Combobox labelName='Mərhələ' placeholder='Mərhələ' position ={stage}/></Grid>
+        <Grid item xs={2.4}><ComboCheckbox  emp={emp}/></Grid>
+        <Grid item xs={2.4}><DateInput labelName='Başlama tarixi' /></Grid>
+        <Grid item xs={2.4}><DateInput labelName='Bitmə tarixi' /></Grid>
       </Grid>
-      <Grid container justifyContent='space-around'>
-        <Grid item xs={2}><MultilineInput labelName='İcra müddəti' charCount='200' readOnly={false} /></Grid>
+      <Grid container justifyContent='space-between' columnSpacing={2}>
+        <Grid item xs={3}><MultilineInput labelName='İcra müddəti' charCount='200' readOnly={false} /></Grid>
         <Grid item xs={3}><MultilineInput labelName='İcra göstəricisi' charCount='200' readOnly={false} /></Grid>
         <Grid item xs={3}><DateInput labelName='Son icra tarixi' /></Grid>
         <Grid item xs={3}><SelectInput /></Grid>
       </Grid>
-      <Grid container>
-        
-      </Grid>
-        <Grid item >
-        <Button onClick ={handleClose}>Ləğv et</Button>
+<Grid container justifyContent='space-between' columnSpacing={2}>
+  <Grid item xs={6}><Textarea  labelName='Tapşırığın adı' maxCharCount='2000'></Textarea></Grid>
+  <Grid item xs={6}><Textarea labelName='Tapşırıq üzrə qeydlər' maxCharCount='4000'></Textarea></Grid>
+</Grid>
+      <Grid container justifyContent='flex-end'>
+      <Grid item >
+        <Button  onClick ={handleClose}>Ləğv et</Button>
         </Grid>
         <Grid item >
         <Button onClick ={handleClose}>Yadda Saxla</Button>
         </Grid>
-        
+      </Grid>
     </Grid>
     </Box>
     </Modal>

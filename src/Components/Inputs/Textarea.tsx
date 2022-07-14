@@ -28,7 +28,7 @@ const Textarea = ({ labelName, maxCharCount, helpertext }: any) => {
             multiline
             rows={4}
             placeholder="Layihə üzrə qeydlər"
-            margin='normal'
+            // margin='normal'
             className="TextareaInput"
         />
     )

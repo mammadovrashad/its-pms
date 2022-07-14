@@ -52,22 +52,27 @@ const theme = createTheme({
     <ThemeProvider theme={theme}>
       <Button onClick={handleOpen}>Open modal</Button>
   <Modal
+  className='modal'
       open={open}
       >
     <Box className='styleaddMember'>
-        <Grid  container>
+        <Grid  container alignItems='center' sx={{width:'100%', height:'100%'}}>
           <Grid item xs={12}> 
           <h1 className='title1'>Komanda üzvü əlavə et</h1>
           </Grid>
          <Grid container columnSpacing={2} >
           <Grid item xs={6}><Combobox labelName='Rol' placeholder ='Rol' position={position}/></Grid>
-          {/* <Grid item xs={6}><ComboCheckbox  emp={emp}/></Grid> */}
+          <Grid item xs={6}><ComboCheckbox  emp={emp}/></Grid>
          </Grid>
           <Grid item xs={12}>
             <AddMemberTable />
             </Grid>
-            <Grid item xs={12}>
-            <Button onClick={handleClose}>Ləğv et</Button>
+            <Grid container justifyContent='flex-end'>
+            <Grid item >
+              <Button>Yadda saxla</Button>
+            </Grid>
+            <Grid item >
+        <Button onClick={handleClose}>Ləğv et</Button></Grid>
             </Grid> 
          </Grid>
          </Box>
