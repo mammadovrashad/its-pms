@@ -75,13 +75,15 @@ const AddMemberModal: React.FC = () => {
               <AddMemberTable />
             </Grid>
             <Grid container justifyContent='flex-end'>
-              <Grid item xs={12} >
-              </Grid>
-              <Button onClick={handleClose}>Ləğv et</Button>
+            <Grid item >
+              <Button>Yadda saxla</Button>
             </Grid>
-          </Grid>
-        </Box>
-      </Modal>
+            <Grid item >
+        <Button onClick={handleClose}>Ləğv et</Button></Grid>
+            </Grid> 
+         </Grid>
+         </Box>
+    </Modal> 
     </ThemeProvider>
 
 
