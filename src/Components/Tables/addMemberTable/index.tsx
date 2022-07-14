@@ -51,8 +51,8 @@ const AddMemberTable: React.FC = () => {
     },
     {
       id: 4,
-      profession: 'Front end developer',
-      employe: 'Nərmin Ağayeva',
+      profession: 'Backend develeper',
+      employe: 'Asif Mustafayev',
     },
 
   ]);
