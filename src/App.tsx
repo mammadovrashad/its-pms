@@ -8,7 +8,8 @@ import DeleteMemberModal from './Components/Modals/deleteMemberModal';
 import DeletePlanModal from './Components/Modals/DeletePlanModal';
 import EditPlanModal from './Components/Modals/editPlanModal';
 import Header from './Components/Header';
-import Pages from './Pages/index'
+import Pages from './Pages/index';
+import { Button } from '@mui/material';
 
 const App: React.FC = () => {
   return (
@@ -16,9 +17,9 @@ const App: React.FC = () => {
       <Header />
     <AddMemberModal />
       <DeleteMemberModal />
-<AddPlanModal /> 
+     <AddPlanModal btn=''/> 
      <DeletePlanModal />
-    <EditPlanModal /> 
+     <AddPlanModal btn='Sil'/> 
     </Fragment>
   )
 }
