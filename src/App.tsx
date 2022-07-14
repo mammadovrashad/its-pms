@@ -15,11 +15,13 @@ const App: React.FC = () => {
   return (
     <Fragment>
       <Header />
-    <AddMemberModal />
+      <AddMemberModal />
       <DeleteMemberModal />
+
      <AddPlanModal btn=''/> 
      <DeletePlanModal />
      <AddPlanModal btn='Sil'/> 
+
     </Fragment>
   )
 }

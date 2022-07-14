@@ -21,7 +21,7 @@ const Combobox = ({ labelName, placeholder, position }: any) => {
             className="comboboxInput"
 
             popupIcon={<Icon />}
-            // Test
+            // sx={{margin: '20px 0'}}
         />
     )
 }

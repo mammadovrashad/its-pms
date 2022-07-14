@@ -5,12 +5,27 @@
   box-sizing: border-box;
   font-weight: 400;
   font-style: normal;
+  /* Track */
+  /* Handle */
+}
+* ::-webkit-scrollbar {
+  width: 6px;
+}
+* ::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+* ::-webkit-scrollbar-thumb {
+  background: #D9D9D9;
+  border-radius: 10px;
 }
 
 .add-member .MuiTableHead-root .MuiTableRow-root th {
   background-color: #068FDB;
   font-size: 16px;
   line-height: 16px;
+}
+.add-member .MuiPaper-root {
+  padding-right: 6px;
 }
 
 .add-member .MuiBox-root {
@@ -19,4 +34,20 @@
   font-size: 14px;
   line-height: 14px;
   color: #292D32;
+}
+
+.add-member .MuiPaper-root {
+  /* Track */
+  /* Handle */
+  box-shadow: none !important;
+}
+.add-member .MuiPaper-root ::-webkit-scrollbar {
+  width: 6px;
+}
+.add-member .MuiPaper-root ::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+.add-member .MuiPaper-root ::-webkit-scrollbar-thumb {
+  background: #D9D9D9;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

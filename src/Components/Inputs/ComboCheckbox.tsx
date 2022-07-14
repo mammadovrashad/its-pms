@@ -20,6 +20,7 @@ const Combobox = ({ emp }: any) => {
             className="comboboxInput"
             id="checkboxes-tags-demo"
             options={emp}
+            // sx={{margin: '20px 0'}}
             disableCloseOnSelect
             getOptionLabel={(option: any) => option.label}
             renderOption={(props, option, { selected }) => (

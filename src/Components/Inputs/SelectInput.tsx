@@ -4,6 +4,9 @@ import { TextField, MenuItem } from '@mui/material';
 // Style
 import './style.scss';
 
+// Import Icon
+import Icon from './ChevronDownIcon';
+
 const stages = [
   {
     value: 'Açıq',
@@ -28,7 +31,7 @@ const SelectInput = () => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     console.log(event.target.value);
-    
+
     setTage(event.target.value);
   };
 

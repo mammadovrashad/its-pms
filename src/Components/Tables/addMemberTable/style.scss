@@ -1,13 +1,31 @@
 @import '../../../Common/Fonts/fonts.css';
 @import '../../../Common/Color/color.scss';
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-weight: 400;
     font-style: normal;
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        border-radius: 5px;
+
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #D9D9D9;
+        border-radius: 10px;
+    }
 }
-.add-member{
+
+.add-member {
     .MuiTableHead-root {
 
         .MuiTableRow-root {
@@ -18,15 +36,18 @@
                 // font-family: Poppins;
             }
         }
+    }
+
+
+.MuiPaper-root{
+    padding-right: 6px;
 }
 
 
-    
-
-
 }
-.add-member{
-    .MuiBox-root{
+
+.add-member {
+    .MuiBox-root {
         display: flex;
         justify-content: space-between;
         font-size: 14px;
@@ -36,4 +57,24 @@
     }
 }
 
+.add-member {
+    .MuiPaper-root {
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
 
+        /* Track */
+        ::-webkit-scrollbar-track {
+            border-radius: 5px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #D9D9D9;
+            ;
+            border-radius: 10px;
+        }
+
+        box-shadow: none !important;
+    }
+}
