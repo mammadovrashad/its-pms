@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { TextField, MenuItem } from '@mui/material';
+import { Select, SelectChangeEvent, MenuItem, FormControl, InputLabel } from '@mui/material';
 
 // Style
 import './style.scss';
 
 // Import Icon
-import Icon from './ChevronDownIcon';
+import ChevronDownIcon from './ChevronDownIcon';
 
 const stages = [
   {
@@ -27,30 +27,32 @@ const stages = [
 
 const SelectInput = () => {
 
-  const [stage, setTage] = useState('Açıq');
+  const [stage, setStage] = useState('Açıq');
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: SelectChangeEvent) => {
     console.log(event.target.value);
 
-    setTage(event.target.value);
+    setStage(event.target.value as string);
   };
 
   return (
-    <TextField
-      id="outlined-select"
-      className="SelectInput"
-      select
-      label="Status"
-      value={stage}
-      onChange={handleChange}
-      // sx={{ margin: '15px 0' }}
-    >
-      {stages.map((option) => (
-        <MenuItem key={option.value} value={option.value}>
-          {option.value}
-        </MenuItem>
-      ))}
-    </TextField>
+    <FormControl className="SelectInput" fullWidth>
+      <InputLabel id="demo-simple-select-label">Status</InputLabel>
+      <Select
+        labelId="demo-simple-select-label"
+        id="outlined-select"
+        value={stage}
+        label="Status"
+        onChange={handleChange}
+        IconComponent={ChevronDownIcon}
+      >
+        {stages.map((option) => (
+          <MenuItem key={option.value} value={option.value}>
+            {option.value}
+          </MenuItem>
+        ))}
+      </Select>
+    </FormControl>
   )
 }
 
