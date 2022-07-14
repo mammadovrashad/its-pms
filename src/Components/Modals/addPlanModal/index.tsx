@@ -62,10 +62,11 @@ function AddPlanModal({ btn }: IBtn) {
       <Modal
         open={open}
       >
-        <div className="container-plan">
-          <div className='x-div'><Button onClick={handleClose}><ClearIcon /></Button></div>
+        {/* <div className="container-plan">
+          <div className='x-div'><Button onClick={handleClose}><ClearIcon /></Button></div> */}
           <Box className='styleplan'>
-            <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
+        <div className='div-addplan'><ClearIcon fontSize='small' /></div>  
+        <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
               <Grid container justifyContent='space-between' columnSpacing={2}>
                 <Grid item xs={2.4}><DisableInput labelName='Task nömrəsi' defaultValue='1.2' /></Grid>
                 <Grid item xs={2.4}><Combobox labelName='Mərhələ' placeholder='Mərhələ' position={stage} /></Grid>
@@ -108,7 +109,7 @@ function AddPlanModal({ btn }: IBtn) {
             </Grid>
 
           </Box>
-        </div>
+        {/* </div> */}
       </Modal>
     </ThemeProvider>
   );

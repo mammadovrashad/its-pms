@@ -78,11 +78,28 @@
   opacity: 0.4;
 }
 
+.MuiAutocomplete-popper li:hover {
+  background-color: #068FDB !important;
+  color: #FFFFFF;
+}
+.MuiAutocomplete-popper li:focus {
+  background-color: #068FDB !important;
+}
+.MuiAutocomplete-popper .MuiAutocomplete-listbox {
+  background: #FFFFFF;
+  border: 1px solid rgba(15, 54, 115, 0.12);
+  border-radius: 6px;
+}
+
+.MuiAutocomplete-popper li:hover {
+  background-color: #000000;
+}
+
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-root {
   padding: 16px 15.58px;
 }
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-input {
-  height: 18px !important;
+  height: 16px !important;
 }
 
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root {
@@ -99,6 +116,7 @@
   margin: 8px 0 0 0;
 }
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-input {
+  height: 64px !important;
   /* Handle */
 }
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-input::-webkit-scrollbar {
