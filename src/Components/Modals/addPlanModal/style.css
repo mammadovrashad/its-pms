@@ -35,4 +35,17 @@
   padding-bottom: 32px;
   margin: auto;
   overflow: auto;
+}
+
+.container-plan {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.x-div {
+  transform: translate(1310px, 50px);
+  z-index: 1;
+  width: 34px;
+  height: 34px;
 }/*# sourceMappingURL=style.css.map */

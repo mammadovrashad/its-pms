@@ -58,3 +58,15 @@
         margin:auto;
         overflow:auto;
     }
+
+   .container-member{
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: column;
+   }
+   .x-divdel{
+    transform: translate(930px, 180px);
+      z-index: 1;
+      width:34px;
+      height:34px;
+   }
