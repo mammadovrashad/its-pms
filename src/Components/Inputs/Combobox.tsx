@@ -19,7 +19,7 @@ const Combobox = ({ labelName, placeholder, position }: any) => {
             options={position}
             renderInput={(params) => <TextField {...params} label={labelName} placeholder={placeholder} />}
             className="comboboxInput"
-            sx={{ margin: '10px 0' }}
+            popupIcon={<ExpandMoreIcon />}
             popupIcon={<Icon />}
         />
     )

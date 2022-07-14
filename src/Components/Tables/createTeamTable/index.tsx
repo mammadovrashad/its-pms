@@ -13,10 +13,6 @@ import React, { useState } from 'react';
 
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
-  [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
-  },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
   },
@@ -32,34 +28,32 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-const AddMemberTable: React.FC = () => {
+const CreateTeamTable: React.FC = () => {
   const [memberData, setMemberData] = useState<any[]>([
     {
       id: 1,
       profession: 'Front end developer',
-      employe: 'Nərmin Ağayeva',
+      employe: 'Sura Suralı',
     },
     {
       id: 2,
       profession: 'Front end developer',
-      employe: 'Nərmin Ağayeva',
+      employe: 'Sura Suralı',
     },
 
   ]);
-
-
   return (
-      <div className="add-member">
+      <div className="add-team">
         <TableContainer component={Paper}>
         <Table  aria-label="customized table">
           <TableHead>
             <TableRow >
-              <StyledTableCell>Rol</StyledTableCell>
-              <StyledTableCell>Əmakdaş</StyledTableCell>
+              <StyledTableCell>Vəzifə</StyledTableCell>
+              <StyledTableCell>Ad və Soyad</StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {memberData.map((row) => (
+            {memberData.map((row:any) => (
               <StyledTableRow key={row.id}>
                 <StyledTableCell>
                   {row.profession}
@@ -83,4 +77,4 @@ const AddMemberTable: React.FC = () => {
       </div>
       );
 }
-      export default AddMemberTable;
+      export default CreateTeamTable;

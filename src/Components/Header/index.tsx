@@ -8,7 +8,7 @@ import { Grid, Menu, MenuItem} from '@mui/material';
 
 const Header:React.FC=()=>{
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-    const open = Boolean(anchorEl);
+    const open1 = Boolean(anchorEl);
     const handleDropClick = (event: React.MouseEvent<HTMLButtonElement>) => {
       setAnchorEl(event.currentTarget);
     };
@@ -36,9 +36,9 @@ padding:'0px 45px'}} alignItems='center' justifyContent='space-between'>
 <button
 className='btn'
  id="basic-button"
- aria-controls={open ? 'basic-menu' : undefined}
+ aria-controls={open1 ? 'basic-menu' : undefined}
  aria-haspopup="true"
- aria-expanded={open ? 'true' : undefined}
+ aria-expanded={open1 ? 'true' : undefined}
  onClick={handleDropClick}
 
       >
@@ -47,7 +47,7 @@ className='btn'
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
-        open={open}
+        open={open1}
         MenuListProps={{
           'aria-labelledby': 'basic-button',
         }}

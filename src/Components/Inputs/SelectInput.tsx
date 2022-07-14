@@ -27,6 +27,8 @@ const SelectInput = () => {
   const [stage, setTage] = useState('Açıq');
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(event.target.value);
+    
     setTage(event.target.value);
   };
 
@@ -38,7 +40,7 @@ const SelectInput = () => {
       label="Status"
       value={stage}
       onChange={handleChange}
-      sx={{ margin: '15px 0' }}
+      // sx={{ margin: '15px 0' }}
     >
       {stages.map((option) => (
         <MenuItem key={option.value} value={option.value}>

@@ -7,33 +7,37 @@
     font-weight: 400;
     font-style: normal;
 }
-.add-member{
+.add-team{
     .MuiTableHead-root {
 
         .MuiTableRow-root {
             th {
-                background-color: $color-Lightblue;
+                background:none;
                 font-size: 16px;
                 line-height: 16px;
+                font-weight: 700;
                 // font-family: Poppins;
             }
         }
+    }
 }
 
-
-    
-
-
-}
-.add-member{
+.add-team{
     .MuiBox-root{
         display: flex;
         justify-content: space-between;
         font-size: 14px;
         line-height: 14px;
         color: $color-font;
-        // font-family: Poppins;
+        // font-family:Poppins;
+
+       
     }
 }
-
-
+.add-team{
+    .MuiTableRow-root{
+        td:nth-child(1){
+            width: 20%;
+        }
+    }
+}

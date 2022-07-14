@@ -7,16 +7,21 @@
   font-style: normal;
 }
 
-.add-member .MuiTableHead-root .MuiTableRow-root th {
-  background-color: #068FDB;
+.add-team .MuiTableHead-root .MuiTableRow-root th {
+  background: none;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 700;
 }
 
-.add-member .MuiBox-root {
+.add-team .MuiBox-root {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
   line-height: 14px;
   color: #292D32;
+}
+
+.add-team .MuiTableRow-root td:nth-child(1) {
+  width: 20%;
 }/*# sourceMappingURL=style.css.map */
