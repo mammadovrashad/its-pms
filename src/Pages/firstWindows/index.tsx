@@ -5,10 +5,12 @@ import ComboCheckbox from '../../Components/Inputs/ComboCheckbox'
 import DisableInput from '../../Components/Inputs/DisableInput'
 import DateInput from '../../Components/Inputs/DateInput'
 import SelectInput from '../../Components/Inputs/SelectInput'
+import { emphasize } from '@mui/material'
+
 
 const FirstWindow = () => {
 
-  const position = [
+   const position = [
     { id: 1, label: 'Layihə rəhbəri' },
     { id: 2, label: 'Məhsul sahibi' },
     { id: 3, label: 'UI/UX dizayner' },
@@ -80,6 +82,7 @@ const FirstWindow = () => {
       <SelectInput />
     </div>
   )
+  
 }
 
 export default FirstWindow;
