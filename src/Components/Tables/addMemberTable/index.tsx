@@ -54,13 +54,22 @@ const AddMemberTable: React.FC = () => {
       profession: 'Backend develeper',
       employe: 'Asif Mustafayev',
     },
+    {
+      id: 5,
+      profession: 'Backend develeper',
+      employe: 'Asif Mustafayev',
+    }, {
+      id: 6,
+      profession: 'Backend develeper',
+      employe: 'Asif Mustafayev',
+    },
 
   ]);
 
 
   return (
       <div className="add-member">
-        <TableContainer component={Paper}>
+        <TableContainer component={Paper} sx={{overflow:'auto',height:'224px'}}>
         <Table  aria-label="customized table">
           <TableHead>
             <TableRow >
