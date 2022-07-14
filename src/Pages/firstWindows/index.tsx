@@ -50,12 +50,14 @@ const FirstWindow = () => {
 
       <Textarea
         labelName={"Layihənin qısa izahı"}
-        maxCharCount={2000}
+        maxCharCount={Infinity}
+        helpertext={false}
       />
 
       <Textarea
         labelName={"Tapşırığın adı"}
         maxCharCount={500}
+        helpertext={true}
       />
 
       <Combobox

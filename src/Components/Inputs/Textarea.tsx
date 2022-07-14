@@ -8,14 +8,15 @@ import {
 // Style
 import './style.scss';
 
-const Textarea = ({ labelName, maxCharCount }: any) => {
+const Textarea = ({ labelName, maxCharCount, helpertext }: any) => {
 
     const [char, setChar] = useState("");
 
     return (
         <TextField
             id="outlined-textarea"
-            helperText={`${char.length}/${maxCharCount}`}
+            // helperText={`${char.length}/${maxCharCount}`}
+            helperText={helpertext ? `${char.length}/${maxCharCount}` : "" }
             inputProps={{ maxLength: maxCharCount }}
             value={char}
             onChange={(event) => {
@@ -25,7 +26,7 @@ const Textarea = ({ labelName, maxCharCount }: any) => {
             label={labelName}
             fullWidth
             multiline
-            rows={3}
+            rows={4}
             placeholder="Layihə üzrə qeydlər"
             margin='normal'
             className="TextareaInput"
