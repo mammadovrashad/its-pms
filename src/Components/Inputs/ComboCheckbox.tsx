@@ -17,6 +17,7 @@ const Combobox = ({ emp }: any) => {
         <Autocomplete
             popupIcon={<Icon />}
             multiple
+            limitTags={1}
             className="comboboxInput"
             id="checkboxes-tags-demo"
             options={emp}
@@ -37,5 +38,7 @@ const Combobox = ({ emp }: any) => {
         />
     )
 }
+
+/* or MUI Select Checkmarks */
 
 export default Combobox
