@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.MuiButton-root {
+
+    &.customContainedButton {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        border-radius: 6px;
+        text-transform: capitalize;
+        box-shadow: none;
+        max-height: 48px;
+    }
+
+
+    &.MuiButton-contained.customContainedButton {
+        background: #068FDB;
+
+        &:hover {
+            background: #068FDB;
+            box-shadow: none;
+        }
+    }
+
+    &.MuiButton-outlined.customContainedButton {
+        background: #FFFFFF;
+        color: #068FDB;
+        border: 0.6px solid #068FDB;
+    }
+
+    &.Mui-disabled.customContainedButton {
+        background: #BBBBBB;
+        border-radius: 6px;
+        color: #FFFFFF;
+    }
+}
+
+.MuiButtonBase-root.customIconButton {
+    background: #FFFFFF;
+    border: 0.6px solid #0F3673;
+    width: 34px;
+    height: 34px;
+    padding: 4px;
+}
+
+.MuiButtonBase-root.customActionButton {
+    background: #6FC03D;
+    box-shadow: none;
+
+    &:hover {
+        background: #6FC03D;
+        box-shadow: none;
+    }
+}
