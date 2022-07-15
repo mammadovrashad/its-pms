@@ -6,20 +6,21 @@ import AddMemberModal from './Components/Modals/addMemberModal';
 import AddPlanModal from './Components/Modals/addPlanModal';
 import DeleteMemberModal from './Components/Modals/deleteMemberModal';
 import DeletePlanModal from './Components/Modals/DeletePlanModal';
-import EditPlanModal from './Components/Modals/editPlanModal';
+
 import Header from './Components/Header';
 import Pages from './Pages/index';
-import { Button } from '@mui/material';
+import { Button, Modal } from '@mui/material';
 
 const App: React.FC = () => {
   return (
     <Fragment>
-      <Header />
+       <Header />
       <AddMemberModal />
       <DeleteMemberModal />
      <AddPlanModal btn=''/> 
      <DeletePlanModal />
      <AddPlanModal btn='Sil'/> 
+  
     </Fragment>
   )
 }
