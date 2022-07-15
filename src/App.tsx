@@ -8,11 +8,7 @@ import { Fragment } from 'react';
 // import DeletePlanModal from './Components/Modals/DeletePlanModal';
 
 import Header from './Components/Header';
-// import Pages from './Pages/index';
-// import { Button, Modal } from '@mui/material';
-import BasicCard from './Components/Cards';
-import CreateNewTeam from './Components/Cards/createNewComands';
-import CreatePlan from './Components/Cards/createPlan';
+
 
 const App: React.FC = () => {
   return (
@@ -20,12 +16,9 @@ const App: React.FC = () => {
        <Header />
       {/* <AddMemberModal />
       <DeleteMemberModal />
-      <AddPlanModal btn='' />
       <DeletePlanModal />
-      <AddPlanModal btn='Sil' /> */}
-      {/* <Pages /> */}
-      <CreateNewTeam/>
-      <CreatePlan/>
+      <AddPlanModal edit={true} />
+     <AddPlanModal edit={false} />
     </Fragment>
   )
 }

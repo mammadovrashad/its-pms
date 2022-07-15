@@ -11,6 +11,8 @@ import Combobox from '../../Inputs/Combobox';
 import ComboCheckbox from '../../Inputs/ComboCheckbox'
 import AddIcon from '@mui/icons-material/Add';
 import { emp, position } from '../../../Pages/firstWindows';
+import ActionButton from '../../Buttons/ActionButton';
+import ContainedButton from '../../Buttons/ContainedButton';
 
 const theme = createTheme({
   typography: {
@@ -43,25 +45,24 @@ const AddMemberModal: React.FC = () => {
             <Grid item xs={12}>
               <h1 className='title1'>Komanda üzvü əlavə et</h1>
             </Grid>
-            <Grid container columnSpacing={2} >
+            <Grid container columnSpacing={3} justifyContent='space-between' >
               <Grid item xs={5}><Combobox labelName='Rol' placeholder='Front-End' position={position} /></Grid>
               <Grid item xs={5}><ComboCheckbox emp={emp} /></Grid>
-              <Grid item xs={2} sx={{display:'flex', justifyContent:'end'}}>
-                <Fab  color='success' size="medium" aria-label="add">
-                  <AddIcon />
-                </Fab>
+              <Grid item xs={2} >
+                <ActionButton />
               </Grid>
             </Grid>
             <Grid item xs={12}>
               <AddMemberTable />
             </Grid>
-            <Grid container justifyContent='flex-end'>
+            <Grid container columnSpacing={2} justifyContent='flex-end'>
             <Grid item >
-              <Button>Yadda saxla</Button>
+             <ContainedButton text='Ləğv et' variantName='outlined' paddingSize='16px 32px 16px 32px' action={handleClose}/>
             </Grid>
             <Grid item >
-        <Button onClick={handleClose}>Ləğv et</Button></Grid>
+        <ContainedButton text='Yadda saxla' variantName='contained' paddingSize='16px 32px 16px 32px'/>
             </Grid> 
+         </Grid>
          </Grid>
          </Box>
     </Modal> 
