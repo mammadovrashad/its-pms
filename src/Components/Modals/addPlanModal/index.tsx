@@ -16,6 +16,7 @@ import Textarea from '../../Inputs/Textarea';
 import ClearIcon from '@mui/icons-material/Clear';
 import AbsoluteCloseButton from '../../Buttons/AbsoluteCloseButton';
 import ContainedButton from '../../Buttons/ContainedButton';
+import DeleteEditButton from '../../Buttons/DeleteEditButton';
 
 const theme = createTheme({
   typography: {
@@ -62,11 +63,10 @@ function AddPlanModal({ edit}: IBtn) {
 
       <Button onClick={handleOpen}>Open modal</Button>
       <Modal
-        open={open}
-      >
-          <Box className='styleplan'>
-       {!edit && <div className='div-addplan'><AbsoluteCloseButton action={handleClose} /></div>}
-        <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
+        open={open} >
+  <Box className='styleplan'>
+          {!edit && <div className='div-addplan'><AbsoluteCloseButton action={handleClose} /></div>}
+  <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
               <Grid container justifyContent='space-between' columnSpacing={2}>
                 <Grid item xs={2.4}><DisableInput labelName='Task nömrəsi' defaultValue='1.2' /></Grid>
                 <Grid item xs={2.4}><Combobox labelName='Mərhələ' placeholder='Mərhələ' position={stage} /></Grid>
@@ -86,11 +86,11 @@ function AddPlanModal({ edit}: IBtn) {
               </Grid>
               <Grid container justifyContent='space-between'>
                 <Grid item >
-                 {edit && <ContainedButton text='Sil' variantName='outlined' paddingSize="16px 32px 16px 32px" action={handleClose}/>}
+                 {edit && <DeleteEditButton  action={handleClose}/>}
                 </Grid>
                 <Grid item >
                   <div>
-                    <ContainedButton text='Yadda Saxla' variantName='contained' paddingSize='16px 32px 16px 32px'/>
+                    <ContainedButton  text='Yadda Saxla' variantName='contained' paddingSize='16px 32px 16px 32px' maxWidth='165px'/>
                   </div>
 
                 </Grid>
@@ -109,8 +109,7 @@ function AddPlanModal({ edit}: IBtn) {
   </Grid> */}
             </Grid>
 
-          </Box>
-        {/* </div> */}
+          </Box>        {/* </div> */}
       </Modal>
     </ThemeProvider>
   );
