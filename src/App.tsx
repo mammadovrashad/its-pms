@@ -8,26 +8,13 @@ import { Fragment } from 'react';
 // import DeletePlanModal from './Components/Modals/DeletePlanModal';
 
 import Header from './Components/Header';
-import Pages from './Pages/index';
-import { Button, Modal } from '@mui/material';
-import ContainedButton from './Components/Buttons/ContainedButton';
-import AbsoluteCloseButton from './Components/Buttons/AbsoluteCloseButton';
-import CreatePlan from './Components/Cards/createPlan';
-import CreateNewTeam from './Components/Cards/createNewComands';
 
 const App: React.FC = () => {
   return (
     <Fragment>
        <Header />
-      {/* <AddMemberModal />
-      <DeleteMemberModal />
-      <DeletePlanModal />
-      <AddPlanModal btn='Sil' /> */}
-      {/* <Pages /> */}
-      <CreateNewTeam/>
-      <CreatePlan/>
-    </Fragment>
+       </Fragment>
   )
 }
 
-export default App
+export default App;

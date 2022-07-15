@@ -34,6 +34,7 @@ export const emp = [
 
 const FirstWindow = () => {
 
+<<<<<<< HEAD
   const position = [
     { id: 1, label: 'Layihə rəhbəri' },
     { id: 2, label: 'Məhsul sahibi' },
@@ -56,6 +57,8 @@ const FirstWindow = () => {
     { id: 8, label: 'Nərmin Ağayeva' },
   ]
 
+=======
+>>>>>>> dbcf79ae4c4a6f4de99ef76127ba6c2f88009e20
   const stage = [
     { id: 1, label: 'Analiz' },
     { id: 2, label: 'Dizayn' },
