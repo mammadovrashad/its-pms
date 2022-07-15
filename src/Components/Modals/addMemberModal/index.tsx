@@ -33,7 +33,7 @@ const AddMemberModal: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen}>Komanda yarat</Button>
       <Modal
         className='modal'
         open={open}

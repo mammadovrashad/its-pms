@@ -1,0 +1,26 @@
+@import '../../../Common/Fonts/fonts.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.create-team .MuiCardActions-root.card-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.create-team .MuiTypography-root {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: Poopins;
+  font-weight: 500;
+}
+.create-team .MuiButton-root {
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 20px;
+  font-family: Poopins;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */

@@ -58,7 +58,7 @@ function AddPlanModal({ btn }: IBtn) {
   return (
     <ThemeProvider theme={theme}>
 
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen}>Plan Yarat</Button>
       <Modal
         open={open}
       >
