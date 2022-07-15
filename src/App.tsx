@@ -9,18 +9,12 @@ import { Fragment } from 'react';
 
 import Header from './Components/Header';
 
-
 const App: React.FC = () => {
   return (
     <Fragment>
        <Header />
-      {/* <AddMemberModal />
-      <DeleteMemberModal />
-      <DeletePlanModal />
-      <AddPlanModal edit={true} />
-     <AddPlanModal edit={false} />
-    </Fragment>
+       </Fragment>
   )
 }
 
-export default App
+export default App;

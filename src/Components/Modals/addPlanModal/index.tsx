@@ -64,8 +64,10 @@ function AddPlanModal({ edit}: IBtn) {
       <Modal
         open={open}
       >
+     <div className="btn-modal">
+    
           <Box className='styleplan'>
-       {!edit && <div className='div-addplan'><AbsoluteCloseButton action={handleClose} /></div>}
+          {!edit && <div className='div-addplan'><AbsoluteCloseButton action={handleClose} /></div>}
         <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
               <Grid container justifyContent='space-between' columnSpacing={2}>
                 <Grid item xs={2.4}><DisableInput labelName='Task nömrəsi' defaultValue='1.2' /></Grid>
@@ -111,6 +113,7 @@ function AddPlanModal({ edit}: IBtn) {
 
           </Box>
         {/* </div> */}
+     </div>
       </Modal>
     </ThemeProvider>
   );
