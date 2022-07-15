@@ -14,13 +14,13 @@ import { Button } from '@mui/material';
 const App: React.FC = () => {
   return (
     <Fragment>
-      <Header />
+      {/* <Header />
       <AddMemberModal />
       <DeleteMemberModal />
       <AddPlanModal btn='' />
       <DeletePlanModal />
-      <AddPlanModal btn='Sil' />
-      {/* <Pages /> */}
+      <AddPlanModal btn='Sil' /> */}
+      <Pages />
     </Fragment>
   )
 }
