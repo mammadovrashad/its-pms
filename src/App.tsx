@@ -17,10 +17,10 @@ const App: React.FC = () => {
        <Header />
       <AddMemberModal />
       <DeleteMemberModal />
-     <AddPlanModal btn=''/> 
-     <DeletePlanModal />
-     <AddPlanModal btn='Sil'/> 
-  
+      <AddPlanModal btn='' />
+      <DeletePlanModal />
+      <AddPlanModal btn='Sil' />
+      {/* <Pages /> */}
     </Fragment>
   )
 }
