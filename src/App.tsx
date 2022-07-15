@@ -10,6 +10,8 @@ import DeletePlanModal from './Components/Modals/DeletePlanModal';
 import Header from './Components/Header';
 import Pages from './Pages/index';
 import { Button, Modal } from '@mui/material';
+import ContainedButton from './Components/Buttons/ContainedButton';
+import AbsoluteCloseButton from './Components/Buttons/AbsoluteCloseButton';
 
 const App: React.FC = () => {
   return (
@@ -17,10 +19,9 @@ const App: React.FC = () => {
        <Header />
       <AddMemberModal />
       <DeleteMemberModal />
-      <AddPlanModal btn='' />
       <DeletePlanModal />
-      <AddPlanModal btn='Sil' />
-      {/* <Pages /> */}
+      <AddPlanModal edit={true} />
+     <AddPlanModal edit={false} />
     </Fragment>
   )
 }
