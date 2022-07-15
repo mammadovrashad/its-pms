@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import CreatePlan from './Components/Cards/createPlan';
 // import AddMemberTable from './Components/Tables/addMemberTable';
 // import CreateTeamTable from './Components/Tables/createTeamTable';
 // import ProjectDetailsTable from './Components/Tables/projectDetailsTable';
@@ -13,6 +14,7 @@ const App: React.FC = () => {
   return (
     <Fragment>
        <Header />
+       <CreatePlan/>
        </Fragment>
   )
 }
