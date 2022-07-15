@@ -34,31 +34,6 @@ export const emp = [
 
 const FirstWindow = () => {
 
-<<<<<<< HEAD
-  const position = [
-    { id: 1, label: 'Layihə rəhbəri' },
-    { id: 2, label: 'Məhsul sahibi' },
-    { id: 3, label: 'UI/UX dizayner' },
-    { id: 4, label: 'IT analitik' },
-    { id: 5, label: 'DB admin' },
-    { id: 6, label: 'SQL developer' },
-    { id: 7, label: 'Front-end developer' },
-    { id: 8, label: 'Back-end developer' },
-  ];
-
-  const emp = [
-    { id: 1, label: 'Nərmin Ağayeva' },
-    { id: 2, label: 'Nərmin Ağayeva' },
-    { id: 3, label: 'Nərmin Ağayeva' },
-    { id: 4, label: 'Nərmin Ağayeva' },
-    { id: 5, label: 'Nərmin Ağayeva' },
-    { id: 6, label: 'Nərmin Ağayeva' },
-    { id: 7, label: 'Nərmin Ağayeva' },
-    { id: 8, label: 'Nərmin Ağayeva' },
-  ]
-
-=======
->>>>>>> dbcf79ae4c4a6f4de99ef76127ba6c2f88009e20
   const stage = [
     { id: 1, label: 'Analiz' },
     { id: 2, label: 'Dizayn' },
