@@ -1,18 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 .MuiButton-root.customContainedButton {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-}
-
-.MuiButton-root.customContainedButton {
-  background: #068FDB;
   border-radius: 6px;
+  text-transform: capitalize;
+  box-shadow: none;
+  max-height: 48px;
+}
+.MuiButton-root.MuiButton-contained.customContainedButton {
+  background: #068FDB;
+}
+.MuiButton-root.MuiButton-contained.customContainedButton:hover {
+  background: #068FDB;
+  box-shadow: none;
+}
+.MuiButton-root.MuiButton-outlined.customContainedButton {
+  background: #FFFFFF;
+  color: #068FDB;
+  border: 0.6px solid #068FDB;
+}
+.MuiButton-root.Mui-disabled.customContainedButton {
+  background: #BBBBBB;
+  border-radius: 6px;
+  color: #FFFFFF;
 }
 
-.MuiButton-root.customContainedButton .css-sghohy-MuiButtonBase-root-MuiButton-root {
-  text-transform: lowercase;
+.MuiButtonBase-root.customIconButton {
+  background: #FFFFFF;
+  border: 0.6px solid #0F3673;
+  width: 34px;
+  height: 34px;
+  padding: 4px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.MuiButtonBase-root.customActionButton {
+  background: #6FC03D;
+  box-shadow: none;
+}
+.MuiButtonBase-root.customActionButton:hover {
+  background: #6FC03D;
+  box-shadow: none;
+}/*# sourceMappingURL=style.css.map */

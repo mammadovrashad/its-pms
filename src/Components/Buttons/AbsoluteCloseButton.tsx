@@ -4,9 +4,9 @@ import XIcon from './xIcon';
 // Style
 import './style.scss';
 
-const AbsoluteCloseButton = () => {
+const AbsoluteCloseButton = ({action}:any) => {
     return (
-        <IconButton className='customIconButton' aria-label="delete" size="large">
+        <IconButton onClick={action} className='customIconButton' aria-label="delete" size="large">
             <XIcon />
         </IconButton>
     )
