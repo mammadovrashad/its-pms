@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+
 .MuiButton-root.customContainedButton, .MuiButton-root.customDeleteEditButton, .MuiButton-root.customIconLabelBtn {
   font-family: "Poppins";
   font-style: normal;
@@ -10,6 +12,7 @@
   box-shadow: none;
   max-height: 48px;
   letter-spacing: 0;
+
 }
 .MuiButton-root.MuiButton-contained.customContainedButton {
   background: #068FDB;
@@ -31,11 +34,13 @@
   padding: 16px 73px;
   max-width: 165px;
 }
+
 .MuiButton-root.Mui-disabled.customContainedButton {
   background: #BBBBBB;
   border-radius: 6px;
   color: #FFFFFF;
 }
+
 .MuiButton-root.customIconLabelBtn {
   color: #292D32;
 }

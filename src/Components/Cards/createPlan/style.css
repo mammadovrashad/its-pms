@@ -1,0 +1,20 @@
+@import '../../../Common/Fonts/fonts.css';
+.create-plan .MuiCardActions-root.card-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.create-plan .MuiTypography-root {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: Poopins;
+  font-weight: 500;
+}
+.create-plan .MuiButton-root {
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 20px;
+  font-family: Poopins;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */

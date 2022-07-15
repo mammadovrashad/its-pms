@@ -61,12 +61,15 @@ function AddPlanModal({ edit}: IBtn) {
   return (
     <ThemeProvider theme={theme}>
 
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen}>Plan Yarat</Button>
       <Modal
         open={open} >
-  <Box className='styleplan'>
+  
+     <div className="btn-modal">
+    
+          <Box className='styleplan'>
           {!edit && <div className='div-addplan'><AbsoluteCloseButton action={handleClose} /></div>}
-  <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
+        <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
               <Grid container justifyContent='space-between' columnSpacing={2}>
                 <Grid item xs={2.4}><DisableInput labelName='Task nömrəsi' defaultValue='1.2' /></Grid>
                 <Grid item xs={2.4}><Combobox labelName='Mərhələ' placeholder='Mərhələ' position={stage} /></Grid>
@@ -109,7 +112,10 @@ function AddPlanModal({ edit}: IBtn) {
   </Grid> */}
             </Grid>
 
-          </Box>        {/* </div> */}
+
+          </Box>
+        {/* </div> */}
+     </div>
       </Modal>
     </ThemeProvider>
   );
