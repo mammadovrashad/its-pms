@@ -10,6 +10,7 @@ import { ThemeProvider } from '@emotion/react';
 import Combobox from '../../Inputs/Combobox';
 import ComboCheckbox from '../../Inputs/ComboCheckbox'
 import AddIcon from '@mui/icons-material/Add';
+import { emp, position } from '../../../Pages/firstWindows';
 
 const theme = createTheme({
   typography: {
@@ -24,27 +25,7 @@ const theme = createTheme({
     }
   }
 })
-const emp = [
-  { id: 1, label: 'Nərmin Ağayeva' },
-  { id: 2, label: 'Nərmin Ağayeva' },
-  { id: 3, label: 'Nərmin Ağayeva' },
-  { id: 4, label: 'Nərmin Ağayeva' },
-  { id: 5, label: 'Nərmin Ağayeva' },
-  { id: 6, label: 'Nərmin Ağayeva' },
-  { id: 7, label: 'Nərmin Ağayeva' },
-  { id: 8, label: 'Nərmin Ağayeva' },
-]
 
-const position = [
-  { id: 1, label: 'Layihə rəhbəri' },
-  { id: 2, label: 'Məhsul sahibi' },
-  { id: 3, label: 'UI/UX dizayner' },
-  { id: 4, label: 'IT analitik' },
-  { id: 5, label: 'DB admin' },
-  { id: 6, label: 'SQL developer' },
-  { id: 7, label: 'Front-end developer' },
-  { id: 8, label: 'Back-end developer' },
-];
 const AddMemberModal: React.FC = () => {
   const [open, setOpen] = React.useState<any>(false);
   const handleOpen = () => setOpen(true);

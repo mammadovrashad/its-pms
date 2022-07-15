@@ -9,9 +9,31 @@ import ContainedButton from '../../Components/Buttons/ContainedButton'
 import AbsoluteCloseButton from '../../Components/Buttons/AbsoluteCloseButton'
 import ActionButton from '../../Components/Buttons/ActionButton'
 
+export const position = [
+  { id: 1, label: 'Layihə rəhbəri' },
+  { id: 2, label: 'Məhsul sahibi' },
+  { id: 3, label: 'UI/UX dizayner' },
+  { id: 4, label: 'IT analitik' },
+  { id: 5, label: 'DB admin' },
+  { id: 6, label: 'SQL developer' },
+  { id: 7, label: 'Front-end developer' },
+  { id: 8, label: 'Back-end developer' },
+];
+export const emp = [
+  { id: 1, label: 'Nərmin Ağayeva' },
+  { id: 2, label: 'Nərmin Ağayeva' },
+  { id: 3, label: 'Nərmin Ağayeva' },
+  { id: 4, label: 'Nərmin Ağayeva' },
+  { id: 5, label: 'Nərmin Ağayeva' },
+  { id: 6, label: 'Nərmin Ağayeva' },
+  { id: 7, label: 'Nərmin Ağayeva' },
+  { id: 8, label: 'Nərmin Ağayeva' },
+]
 
 const FirstWindow = () => {
 
+<<<<<<< HEAD
+=======
   const position = [
     { id: 1, label: 'Layihə rəhbəri' },
     { id: 2, label: 'Məhsul sahibi' },
@@ -34,6 +56,7 @@ const FirstWindow = () => {
     { id: 8, label: 'Nərmin Ağayeva' },
   ]
 
+>>>>>>> 51ffd5f2eda02d9af7022a95fb9c381a00deec16
   const stage = [
     { id: 1, label: 'Analiz' },
     { id: 2, label: 'Dizayn' },
