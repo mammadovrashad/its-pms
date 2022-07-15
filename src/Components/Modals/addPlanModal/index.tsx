@@ -14,6 +14,8 @@ import MultilineInput from '../../Inputs/MultilineInput';
 import SelectInput from '../../Inputs/SelectInput';
 import Textarea from '../../Inputs/Textarea';
 import ClearIcon from '@mui/icons-material/Clear';
+import AbsoluteCloseButton from '../../Buttons/AbsoluteCloseButton';
+import ContainedButton from '../../Buttons/ContainedButton';
 
 const theme = createTheme({
   typography: {
@@ -48,9 +50,9 @@ const emp = [
   { id: 8, label: 'Nərmin Ağayeva' },
 ]
 type IBtn = {
-  btn: any;
+  edit:Boolean;
 }
-function AddPlanModal({ btn }: IBtn) {
+function AddPlanModal({ edit}: IBtn) {
   const [open, setOpen] = React.useState<any>(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -62,10 +64,10 @@ function AddPlanModal({ btn }: IBtn) {
       <Modal
         open={open}
       >
-        {/* <div className="container-plan">
-          <div className='x-div'><Button onClick={handleClose}><ClearIcon /></Button></div> */}
+     <div className="btn-modal">
+    
           <Box className='styleplan'>
-        <div className='div-addplan'><ClearIcon fontSize='small' /></div>  
+          {!edit && <div className='div-addplan'><AbsoluteCloseButton action={handleClose} /></div>}
         <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
               <Grid container justifyContent='space-between' columnSpacing={2}>
                 <Grid item xs={2.4}><DisableInput labelName='Task nömrəsi' defaultValue='1.2' /></Grid>
@@ -86,11 +88,12 @@ function AddPlanModal({ btn }: IBtn) {
               </Grid>
               <Grid container justifyContent='space-between'>
                 <Grid item >
-                  <Button>{btn}</Button>
+                 {edit && <ContainedButton text='Sil' variantName='outlined' paddingSize="16px 32px 16px 32px" action={handleClose}/>}
                 </Grid>
                 <Grid item >
-                  <div> <Button onClick={handleClose}>Ləğv et</Button>
-                    <Button>Yadda Saxla</Button></div>
+                  <div>
+                    <ContainedButton text='Yadda Saxla' variantName='contained' paddingSize='16px 32px 16px 32px'/>
+                  </div>
 
                 </Grid>
 
@@ -110,6 +113,7 @@ function AddPlanModal({ btn }: IBtn) {
 
           </Box>
         {/* </div> */}
+     </div>
       </Modal>
     </ThemeProvider>
   );

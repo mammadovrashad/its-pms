@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+<<<<<<< HEAD
 .MuiButton-root.customContainedButton {
+=======
+.MuiButton-root.customContainedButton, .MuiButton-root.customDeleteEditButton, .MuiButton-root.customIconLabelBtn {
+>>>>>>> 8c169b2b55611db8ec9cbfd7e58305d35b0dbd38
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -9,6 +13,10 @@
   text-transform: capitalize;
   box-shadow: none;
   max-height: 48px;
+<<<<<<< HEAD
+=======
+  letter-spacing: 0;
+>>>>>>> 8c169b2b55611db8ec9cbfd7e58305d35b0dbd38
 }
 .MuiButton-root.MuiButton-contained.customContainedButton {
   background: #068FDB;
@@ -22,10 +30,31 @@
   color: #068FDB;
   border: 0.6px solid #068FDB;
 }
+.MuiButton-root.MuiButton-outlined.customDeleteEditButton {
+  background: #FFFFFF;
+  border: 1px solid #F05353;
+  border-radius: 9px;
+  color: #F05353;
+  padding: 16px 73px;
+  max-width: 165px;
+}
 .MuiButton-root.Mui-disabled.customContainedButton {
   background: #BBBBBB;
   border-radius: 6px;
   color: #FFFFFF;
+}
+.MuiButton-root.customIconLabelBtn {
+  color: #292D32;
+}
+.MuiButton-root.customIconLabelBtn .MuiButton-startIcon {
+  width: 20px;
+  height: 20px;
+}
+.MuiButton-root.customIconLabelBtn .MuiButton-startIcon .MuiButtonBase-root {
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
 }
 
 .MuiButtonBase-root.customIconButton {

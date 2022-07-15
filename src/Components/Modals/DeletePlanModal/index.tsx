@@ -7,6 +7,8 @@ import {  createTheme, Grid} from '@mui/material';
 import ClearIcon from '@mui/icons-material/Clear';
 import './style.css';
 import '../../../Common/Fonts/fonts.css';
+import AbsoluteCloseButton from '../../Buttons/AbsoluteCloseButton';
+import ContainedButton from '../../Buttons/ContainedButton';
 
   const theme = createTheme({
     typography: {
@@ -35,14 +37,14 @@ import '../../../Common/Fonts/fonts.css';
       >
        
           <Box className ='styledeleteplan'>
-            <div className='div-delplan'><ClearIcon /></div>
+            <div className='div-delplan'><AbsoluteCloseButton action={handleClose} /></div>
         <Grid  container  justifyContent='center' alignItems='center' sx={{width:'100%',height:'100%'}} spacing={0}>
         <Grid item  >
         <p className='title3'>Fəaliyyət planını silmək istədiyinizə əminsiniz mi ?</p>
         </Grid>
-        <Grid container justifyContent='center'>
-        <Grid item ><Button onClick ={handleClose}>Ləğv et</Button></Grid>
-        <Grid item ><Button>Sil</Button></Grid>
+        <Grid container justifyContent='center' spacing={2}>
+        <Grid item ><ContainedButton text='Ləğv et' variantName='outlined' paddingSize='16px 32px 16px 32px' action={handleClose}/></Grid>
+        <Grid item ><ContainedButton text='Sil' variantName='contained' paddingSize='16px 32px 16px 32px' /></Grid>
         </Grid>
        
     </Grid>

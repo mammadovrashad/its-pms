@@ -12,7 +12,7 @@ const CreatePlan = () => {
              Fəaliyyət planı yoxdur, yeni plan yarat
           </Typography>
           <Button size="small">
-             <AddPlanModal btn='' />
+             <AddPlanModal edit={false} />
           </Button>
         </CardActions>
       </BasicCard> 
