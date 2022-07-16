@@ -13,9 +13,9 @@ import Header from './Components/Header';
 const App: React.FC = () => {
   return (
     <Fragment>
-       <Header />
-       <CreatePlan/>
-       </Fragment>
+      <Header />
+      <CreatePlan />
+    </Fragment>
   )
 }
 

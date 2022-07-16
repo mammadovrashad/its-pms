@@ -61,7 +61,7 @@ function AddPlanModal({ edit}: IBtn) {
   return (
     <ThemeProvider theme={theme}>
 
-      <Button onClick={handleOpen}>Plan Yarat</Button>
+      <Button onClick={handleOpen}>Plan yarat</Button>
       <Modal
         open={open} >
   
