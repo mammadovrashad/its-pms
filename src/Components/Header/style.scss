@@ -1,4 +1,6 @@
-@import '../../Common/Color/color.scss';
+@import '../../Common/Fonts/fonts.css';
+@import '../../Common//Color/color.scss';
+@import '../../Common/Variables/style.scss';
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
 
 
@@ -12,7 +14,12 @@
 .container-header{
     width: 100%;
     height: 100px;
+    display: flex;
+    justify-content: center;
     background-color:$color-white;
+    .header-menu{
+      width:$countainer-width;
+    }
 
 }
 .title-style{
