@@ -21,4 +21,12 @@
         font-family: Poopins;
         color:$color-Lightblue;
     }
+   
+    .grid-container{
+        display: flex;
+        justify-content: center;
+        .header-container{
+            width: 1440px;
+        }
+    }
 }
