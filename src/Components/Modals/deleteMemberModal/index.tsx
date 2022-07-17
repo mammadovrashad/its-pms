@@ -1,15 +1,13 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
 import { ThemeProvider } from '@emotion/react';
 import {  createTheme, Grid } from '@mui/material'
-import ClearIcon from '@mui/icons-material/Clear';
 import './style.css'
 import '../../../Common/Fonts/fonts.css';
 import AbsoluteCloseButton from '../../Buttons/AbsoluteCloseButton';
 import ContainedButton from '../../Buttons/ContainedButton';
+import BasicModal from '..';
 
   const theme = createTheme({
     typography: {
@@ -32,25 +30,23 @@ import ContainedButton from '../../Buttons/ContainedButton';
   return (
     <ThemeProvider theme={theme}> 
     
-    <Button onClick={handleOpen}>Open modal</Button>
-  <Modal
-      open={open}
-      >
-     
-        <Box className='stylemember' >
+    <Button onClick={handleOpen}>Sil</Button>
+ 
+     <BasicModal open={open}>
+     <Box className='stylemember' >
           <div className='div-delmember'><AbsoluteCloseButton action={handleClose} /></div>
     <Grid  container  justifyContent='center' alignItems='center' sx={{width:'100%',height:'100%'}} spacing={0}>
         <Grid item  >
         <p className='title3'>Komanda üzvünü silmək istədiyinizə əminsiniz mi ?</p>
         </Grid>
         <Grid container spacing={2} justifyContent='center'>
-        <Grid item  ><ContainedButton text='Ləğv et' variantName='outlined' paddingSize='16px 32px 16px 32px' action={handleClose} /></Grid>
-        <Grid item ><ContainedButton text='Sil' variantName='contained' paddingSize='16px 32px 16px 32px'/></Grid>
+        <Grid item ><ContainedButton text='Sil' variantName='contained' paddingSize='16px 32px 16px 32px' maxWidth='120px'/></Grid>
         </Grid>
     </Grid>
       </Box> 
-      
-    </Modal>
+     </BasicModal>
+       
+    
   </ThemeProvider>
    
   );
