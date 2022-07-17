@@ -16,4 +16,4 @@ const CreatePlan = () => {
   )
 }
 
-export default CreatePlan
+export default CreatePlan;

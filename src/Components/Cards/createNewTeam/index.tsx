@@ -1,4 +1,4 @@
-import { Button, CardActions, Typography } from '@mui/material';
+import {Typography } from '@mui/material';
 import React from 'react';
 import AddMemberModal from '../../Modals/addMemberModal';
 import BasicCard from '../index';

@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+.create-team {
+  width: 1280px;
+}
+.create-team .MuiPaper-root {
+  border: none;
+}
 .create-team .MuiCardActions-root.card-action {
   display: flex;
   flex-direction: column;
