@@ -1,0 +1,10 @@
+@import '../../../Common/Fonts/fonts.css';
+@import '../../../Common/Color/color.scss';
+@import '../../../Common/Variables/style.scss';
+
+.first-project-info{
+    width: $countainer-width;
+    .MuiPaper-root {
+        border:none;
+    }
+}

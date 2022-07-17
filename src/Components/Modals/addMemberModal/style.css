@@ -1,15 +1,14 @@
-@import url(d:\Desktop SSD\Programming\ITS\its-pms\src\Common\Fonts\fonts.css);
+@import '../../../Common/Fonts/fonts.css';
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-weight: 400;
   font-style: normal;
 }
 
 .title1 {
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 24px;
@@ -37,8 +36,7 @@
   bottom: 0%;
   background-color: #FFFFFF;
   border-radius: 6px;
-  -webkit-box-shadow: 0px 2px 16px rgba(41, 45, 50, 0.12);
-          box-shadow: 0px 2px 16px rgba(41, 45, 50, 0.12);
+  box-shadow: 0px 2px 16px rgba(41, 45, 50, 0.12);
   padding: 32px 36px 24px 24px;
   margin: auto;
 }

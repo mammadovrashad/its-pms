@@ -9,12 +9,10 @@ const CreateNewTeam: React.FC = () => {
   return (
     <div className="create-team">
       <BasicCard>
-        <CardActions className='card-action'>
           <Typography variant="h5" component="div">
             Komanda yoxdur, yeni komanda yarat
           </Typography>
           <AddMemberModal/>
-        </CardActions>
       </BasicCard>
     </div>
   )

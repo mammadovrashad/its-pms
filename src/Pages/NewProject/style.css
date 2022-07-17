@@ -1,0 +1,17 @@
+.new-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new-project .container-item {
+  display: flex;
+  justify-content: center;
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding: 0px;
+}
+.new-project .info {
+  width: 1280px;
+}/*# sourceMappingURL=style.css.map */
