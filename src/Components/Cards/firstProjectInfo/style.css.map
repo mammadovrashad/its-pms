@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAP,sEAAO;AAIP,AAAA,mBAAmB,CAAA;EACf,KAAK,EELS,MAAM;CFSvB;;AALD,AAEI,mBAFe,CAEf,cAAc,CAAC;EACX,MAAM,EAAC,IAAI;CACd",
-    "sources": [
-        "style.scss",
-        "../../../Common/Color/color.scss",
-        "../../../Common/Variables/style.scss"
-    ],
-    "names": [],
-    "file": "style.css"
-}
+{"version":3,"sources":["style.scss","../../../Common/Variables/style.scss","style.css","../../../Common/Color/color.scss"],"names":[],"mappings":"AACQ,yCAAA;AAGR;EACI,aCLc;ACGlB;AFGI;EACI,YAAA;AEDR;AFGI;EACI,YAAA;EACA,gBAAA;AEDR;AFGI;EACI,aAAA;EACA,eAAA;EACA,iBAAA;EACA,gBAAA;EACA,oBAAA;EACA,cGnBS;ADkBjB","file":"style.css"}

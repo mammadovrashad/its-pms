@@ -20,8 +20,8 @@ const NewProject: React.FC = () => {
         <div className='new-project'>
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={5}>
-                <Grid item xs={12}>
-                        <Item className='container-item'>
+                <Grid item xs={12} className='grid-container'>
+                        <Item className='container-item header-container'>
                             <Header/>
                         </Item>
                     </Grid>

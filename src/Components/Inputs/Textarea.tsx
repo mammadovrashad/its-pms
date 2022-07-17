@@ -18,7 +18,7 @@ const Textarea = ({ labelName, maxCharCount, helpertext }: any) => {
             helperText={helpertext ? `${char.length}/${maxCharCount}` : "" }
             inputProps={{ maxLength: maxCharCount }}
             value={char}
-            onChange={(event) => {
+            onChange={(event) =>{
                 const { value } = event.target;
                 setChar(value);
             }}
