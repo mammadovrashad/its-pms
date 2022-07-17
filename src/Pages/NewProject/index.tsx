@@ -5,6 +5,7 @@ import FirstProjectInfo from '../../Components/Cards/firstProjectInfo';
 import Header from '../../Components/Header';
 import { Box, Grid, Paper, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import CreateNewTeam from '../../Components/Cards/createNewTeam';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -34,6 +35,11 @@ const NewProject: React.FC = () => {
                     <Grid item xs={12}>
                         <Item className='container-item'>
                             <FirstProjectInfo/>
+                        </Item>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Item className='container-item'>
+                            <CreateNewTeam/>
                         </Item>
                     </Grid>
                     <Grid item xs={12}>

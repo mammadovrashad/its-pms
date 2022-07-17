@@ -1,5 +1,5 @@
 import './style.css';
-import { Box,Grid, Paper } from '@mui/material';
+import { Box,Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import BasicCard from '..';
@@ -21,19 +21,23 @@ const FirstProjectInfo:React.FC = () => {
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={2}>
                             <Grid item xs={12}>
-                                <Item>xs=12</Item>
+                                <Item className='grid-item'>
+                                    <Typography>
+                                        Ilkin layihə məlumatları
+                                    </Typography>
+                                </Item>
                             </Grid>
                             <Grid item xs={4}>
-                                <Item>xs=4</Item>
+                                <Item className='grid-item'>xs=4</Item>
                             </Grid>
                             <Grid item xs={4}>
-                                <Item>xs=4</Item>
+                                <Item className='grid-item'>xs=4</Item>
                             </Grid>
                             <Grid item xs={4}>
-                                <Item>xs=4</Item>
+                                <Item className='grid-item'>xs=4</Item>
                             </Grid>
                             <Grid item xs={12}>
-                                <Item>xs=12</Item>
+                                <Item className='grid-item'>xs=12</Item>
                             </Grid>
                         </Grid>
                     </Box>
