@@ -1,30 +1,18 @@
-@import url(d:\Desktop SSD\Programming\ITS\its-pms\src\Common\Fonts\fonts.css);
+@import '../../../Common/Fonts/fonts.css';
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-weight: 400;
   font-style: normal;
 }
 
 .title1 {
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 24px;
   color: #068FDB;
-}
-
-.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
-  position: absolute !important;
-  width: 100% !important;
-  height: 100% !important;
-  left: 0px !important;
-  top: 0px !important;
-  -webkit-backdrop-filter: blur(6px) !important;
-          backdrop-filter: blur(6px) !important;
-  background-color: rgba(244, 250, 255, 0.75) !important;
 }
 
 .styleaddMember {
@@ -37,14 +25,16 @@
   bottom: 0%;
   background-color: #FFFFFF;
   border-radius: 6px;
-  -webkit-box-shadow: 0px 2px 16px rgba(41, 45, 50, 0.12);
-          box-shadow: 0px 2px 16px rgba(41, 45, 50, 0.12);
-  padding: 32px 36px 24px 24px;
+  box-shadow: 0px 2px 16px rgba(41, 45, 50, 0.12);
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin: auto;
 }
 
 .div-addmember {
   position: absolute;
-  right: -1%;
-  top: -3%;
+  right: -2%;
+  top: -2%;
 }/*# sourceMappingURL=style.css.map */

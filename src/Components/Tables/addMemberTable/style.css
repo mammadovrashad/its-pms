@@ -1,23 +1,19 @@
-@import url(d:\Desktop SSD\Programming\ITS\its-pms\src\Common\Fonts\fonts.css);
+@import '../../../Common/Fonts/fonts.css';
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-weight: 400;
   font-style: normal;
   /* Track */
   /* Handle */
 }
-
 * ::-webkit-scrollbar {
   width: 6px;
 }
-
 * ::-webkit-scrollbar-track {
   border-radius: 5px;
 }
-
 * ::-webkit-scrollbar-thumb {
   background: #D9D9D9;
   border-radius: 10px;
@@ -28,18 +24,13 @@
   font-size: 16px;
   line-height: 16px;
 }
-
 .add-member .MuiPaper-root {
   padding-right: 6px;
 }
 
 .add-member .MuiBox-root {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 14px;
   color: #292D32;
@@ -48,20 +39,15 @@
 .add-member .MuiPaper-root {
   /* Track */
   /* Handle */
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
-
 .add-member .MuiPaper-root ::-webkit-scrollbar {
   width: 6px;
 }
-
 .add-member .MuiPaper-root ::-webkit-scrollbar-track {
   border-radius: 5px;
 }
-
 .add-member .MuiPaper-root ::-webkit-scrollbar-thumb {
   background: #D9D9D9;
   border-radius: 10px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

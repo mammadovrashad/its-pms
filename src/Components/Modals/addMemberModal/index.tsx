@@ -9,11 +9,11 @@ import AddMemberTable from '../../Tables/addMemberTable'
 import { ThemeProvider } from '@emotion/react';
 import Combobox from '../../Inputs/Combobox';
 import ComboCheckbox from '../../Inputs/ComboCheckbox'
-import AddIcon from '@mui/icons-material/Add';
 import { emp, position } from '../../../Pages/firstWindows';
 import ActionButton from '../../Buttons/ActionButton';
 import ContainedButton from '../../Buttons/ContainedButton';
 import AbsoluteCloseButton from '../../Buttons/AbsoluteCloseButton';
+import BasicModal from '..';
 const theme = createTheme({
   typography: {
     fontFamily: [
@@ -36,20 +36,17 @@ const AddMemberModal: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <Button onClick={handleOpen}>Komanda yarat</Button>
-      <Modal
-        className='modal'
-        open={open}
-      >
-        <Box className='styleaddMember'>
+     <BasicModal open={open}> 
+    <Box className='styleaddMember'>
         <div className='div-addmember'><AbsoluteCloseButton action={handleClose} /></div>
           <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
             <Grid item xs={12}>
               <h1 className='title1'>Komanda üzvü əlavə et</h1>
             </Grid>
             <Grid container columnSpacing={3} justifyContent='space-between' >
-              <Grid item xs={5}><Combobox labelName='Rol' placeholder='Front-End' position={position} /></Grid>
-              <Grid item xs={5}><ComboCheckbox emp={emp} /></Grid>
-              <Grid item xs={2} >
+              <Grid item xs={5} ><Combobox labelName='Rol' placeholder='Front-End' position={position} /></Grid>
+              <Grid item xs={5} ><ComboCheckbox emp={emp} /></Grid>
+              <Grid item >
                 <ActionButton />
               </Grid>
             </Grid>
@@ -58,15 +55,12 @@ const AddMemberModal: React.FC = () => {
             </Grid>
             <Grid container columnSpacing={2} justifyContent='flex-end'>
             <Grid item >
-             <ContainedButton text='Ləğv et' variantName='outlined' paddingSize='16px 32px 16px 32px' action={handleClose}/>
-            </Grid>
-            <Grid item >
         <ContainedButton text='Yadda saxla' variantName='contained' paddingSize='16px 32px 16px 32px'/>
             </Grid> 
          </Grid>
          </Grid>
          </Box>
-    </Modal> 
+         </BasicModal>
     </ThemeProvider>
 
 

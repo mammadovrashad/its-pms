@@ -17,6 +17,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 import AbsoluteCloseButton from '../../Buttons/AbsoluteCloseButton';
 import ContainedButton from '../../Buttons/ContainedButton';
 import DeleteEditButton from '../../Buttons/DeleteEditButton';
+import BasicModal from '..';
 
 const theme = createTheme({
   typography: {
@@ -51,9 +52,9 @@ const emp = [
   { id: 8, label: 'Nərmin Ağayeva' },
 ]
 type IBtn = {
-  edit:Boolean;
+  edit: Boolean;
 }
-function AddPlanModal({ edit}: IBtn) {
+function AddPlanModal({ edit }: IBtn) {
   const [open, setOpen] = React.useState<any>(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -62,58 +63,41 @@ function AddPlanModal({ edit}: IBtn) {
     <ThemeProvider theme={theme}>
 
       <Button onClick={handleOpen}>Plan yarat</Button>
-      <Modal
-        open={open} >
-          <Box className='styleplan'>
+  <BasicModal open={open}>
+  <Box className='styleplan'>
           {!edit && <div className='div-addplan'><AbsoluteCloseButton action={handleClose} /></div>}
-          
-        <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
-              <Grid container justifyContent='space-between' columnSpacing={2}>
-                <Grid item xs={2.4}><DisableInput labelName='Task nömrəsi' defaultValue='1.2' /></Grid>
-                <Grid item xs={2.4}><Combobox labelName='Mərhələ' placeholder='Mərhələ' position={stage} /></Grid>
-                <Grid item xs={2.4}><ComboCheckbox emp={emp} /></Grid>
-                <Grid item xs={2.4}><DateInput labelName='Başlama tarixi' /></Grid>
-                <Grid item xs={2.4}><DateInput labelName='Bitmə tarixi' /></Grid>
-              </Grid>
-              <Grid container justifyContent='space-between' columnSpacing={2}>
-                <Grid item xs={3}><MultilineInput labelName='İcra müddəti' charCount='200' readOnly={false} /></Grid>
-                <Grid item xs={3}><MultilineInput labelName='İcra göstəricisi' charCount='200' readOnly={false} /></Grid>
-                <Grid item xs={3}><DateInput labelName='Son icra tarixi' /></Grid>
-                <Grid item xs={3}><SelectInput /></Grid>
-              </Grid>
-              <Grid container justifyContent='space-between' columnSpacing={2}>
-                <Grid item xs={6}><Textarea labelName='Tapşırığın adı' maxCharCount='2000'></Textarea></Grid>
-                <Grid item xs={6}><Textarea labelName='Tapşırıq üzrə qeydlər' maxCharCount='4000'></Textarea></Grid>
-              </Grid>
-              <Grid container justifyContent='space-between'>
-                <Grid item >
-                 {edit && <DeleteEditButton  action={handleClose}/>}
-                </Grid>
-                <Grid item >
-              
-                    <ContainedButton  text='Yadda Saxla' variantName='contained' paddingSize='16px 32px 16px 32px' maxWidth='165px'/>
-                 
 
-                </Grid>
-
-              </Grid>
-              {/* <Grid container justifyContent='flex-end'>
-    <Grid item>
-      <Button onClick={handleClose}>Ləğv et</Button>
-    </Grid>
-    <Grid item>
-      <Button onClick={handleClose}>Yadda Saxla</Button>
-    </Grid>
-    <Grid item>
-      <Button>{btn}</Button>
-    </Grid>
-  </Grid> */}
+          <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
+            <Grid container justifyContent='space-between' columnSpacing={2}>
+              <Grid item xs={2.4}><DisableInput labelName='Task nömrəsi' defaultValue='1.2' /></Grid>
+              <Grid item xs={2.4}><Combobox labelName='Mərhələ' placeholder='Mərhələ' position={stage} /></Grid>
+              <Grid item xs={2.4}><ComboCheckbox emp={emp} /></Grid>
+              <Grid item xs={2.4}><DateInput labelName='Başlama tarixi' /></Grid>
+              <Grid item xs={2.4}><DateInput labelName='Bitmə tarixi' /></Grid>
             </Grid>
+            <Grid container justifyContent='space-between' columnSpacing={2}>
+              <Grid item xs={3}><MultilineInput labelName='İcra müddəti' charCount='200' readOnly={false} /></Grid>
+              <Grid item xs={3}><MultilineInput labelName='İcra göstəricisi' charCount='200' readOnly={false} /></Grid>
+              <Grid item xs={3}><DateInput labelName='Son icra tarixi' /></Grid>
+              <Grid item xs={3}><SelectInput /></Grid>
+            </Grid>
+            <Grid container justifyContent='space-between' columnSpacing={2}>
+              <Grid item xs={6}><Textarea labelName='Tapşırığın adı' maxCharCount='2000' helpertext={true} ></Textarea></Grid>
+              <Grid item xs={6}><Textarea labelName='Tapşırıq üzrə qeydlər' maxCharCount='4000' helpertext={true}></Textarea></Grid>
+            </Grid>
+            <Grid container justifyContent='space-between'>
+              <Grid item >
+                {edit && <DeleteEditButton action={handleClose} />}
+              </Grid>
+              <Grid item >
+                <ContainedButton text='Yadda Saxla' variantName='contained' paddingSize='16px 32px 16px 32px' maxWidth='165px' />
+              </Grid>
 
-
-          </Box>
-        {/* </div> */}
-      </Modal>
+            </Grid>
+          </Grid>
+        </Box>
+  </BasicModal>
+       
     </ThemeProvider>
   );
 }

@@ -1,21 +1,11 @@
-@import url(d:\Desktop SSD\Programming\ITS\its-pms\src\Common\Fonts\fonts.css);
+@import '../../../Common/Fonts/fonts.css';
 .create-plan .MuiCardActions-root.card-action {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 24px 0;
 }
-
 .create-plan .MuiTypography-root {
   font-size: 24px;
   line-height: 24px;
@@ -23,7 +13,6 @@
   font-weight: 500;
   margin-bottom: 32px;
 }
-
 .create-plan .MuiButton-root {
   position: relative;
   font-size: 16px;
@@ -35,17 +24,14 @@
   color: #068FDB;
   text-transform: none;
 }
-
 .create-plan .MuiButton-root:hover {
   background-color: transparent;
 }
-
 .create-plan .MuiButton-root::before {
-  content: '';
+  content: "";
   bottom: -4px;
   position: absolute;
   height: 2px;
   width: 100%;
   background-color: #068FDB;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
