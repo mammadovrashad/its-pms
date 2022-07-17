@@ -2,21 +2,24 @@
 .MuiTextField-root.MultilineInput,
 .MuiTextField-root.TextareaInput,
 .MuiAutocomplete-root.comboboxInput,
+.MuiFormControl-root.comboboxInput,
 .MuiTextField-root.DisableInput,
 .MuiTextField-root.DateInput,
 .MuiFormControl-root.SelectInput {
   /* V2
-  .MuiInputLabel-root,
-  .MuiOutlinedInput-input,
-  .MuiInputLabel-formControl.Mui-focused {
-      color: #292D32;
-      opacity: 0.4;
-  }
-  */
+    .MuiInputLabel-root,
+    .MuiOutlinedInput-input,
+    .MuiInputLabel-formControl.Mui-focused {
+        color: #292D32;
+        opacity: 0.4;
+    }
+    */
 }
+
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-root,
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root,
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root,
+.MuiFormControl-root.comboboxInput .MuiOutlinedInput-root,
 .MuiTextField-root.DisableInput .MuiOutlinedInput-root,
 .MuiTextField-root.DateInput .MuiOutlinedInput-root,
 .MuiFormControl-root.SelectInput .MuiOutlinedInput-root {
@@ -24,42 +27,51 @@
   background-color: #FFFFFF;
   border: none;
   border-radius: 6px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
 }
+
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.MuiFormControl-root.comboboxInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.DisableInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.DateInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
 .MuiFormControl-root.SelectInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
   border: 0.4px solid #0F3673;
 }
+
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline,
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline,
+.MuiFormControl-root.comboboxInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.DisableInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.DateInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline,
 .MuiFormControl-root.SelectInput .MuiOutlinedInput-root:not(:focus) .MuiOutlinedInput-notchedOutline {
   border: 0.4px solid #0F3673;
 }
+
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline,
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline,
+.MuiFormControl-root.comboboxInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.DisableInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline,
 .MuiTextField-root.DateInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline,
 .MuiFormControl-root.SelectInput .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
   border: 0.4px solid #0F3673;
 }
+
 .MuiTextField-root.MultilineInput .MuiInputLabel-root,
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-input,
 .MuiTextField-root.TextareaInput .MuiInputLabel-root,
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-input,
 .MuiAutocomplete-root.comboboxInput .MuiInputLabel-root,
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-input,
+.MuiFormControl-root.comboboxInput .MuiInputLabel-root,
+.MuiFormControl-root.comboboxInput .MuiOutlinedInput-input,
 .MuiTextField-root.DisableInput .MuiInputLabel-root,
 .MuiTextField-root.DisableInput .MuiOutlinedInput-input,
 .MuiTextField-root.DateInput .MuiInputLabel-root,
@@ -68,9 +80,11 @@
 .MuiFormControl-root.SelectInput .MuiOutlinedInput-input {
   line-height: 16px;
 }
+
 .MuiTextField-root.MultilineInput .MuiInputLabel-formControl.Mui-focused,
 .MuiTextField-root.TextareaInput .MuiInputLabel-formControl.Mui-focused,
 .MuiAutocomplete-root.comboboxInput .MuiInputLabel-formControl.Mui-focused,
+.MuiFormControl-root.comboboxInput .MuiInputLabel-formControl.Mui-focused,
 .MuiTextField-root.DisableInput .MuiInputLabel-formControl.Mui-focused,
 .MuiTextField-root.DateInput .MuiInputLabel-formControl.Mui-focused,
 .MuiFormControl-root.SelectInput .MuiInputLabel-formControl.Mui-focused {
@@ -82,9 +96,11 @@
   background-color: #068FDB !important;
   color: #FFFFFF;
 }
+
 .MuiAutocomplete-popper li:focus {
   background-color: #068FDB !important;
 }
+
 .MuiAutocomplete-popper .MuiAutocomplete-listbox {
   background: #FFFFFF;
   border: 1px solid rgba(15, 54, 115, 0.12);
@@ -98,6 +114,7 @@
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-root {
   padding: 16px 15.58px;
 }
+
 .MuiTextField-root.MultilineInput .MuiOutlinedInput-input {
   height: 16px !important;
 }
@@ -105,8 +122,9 @@
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-root {
   padding: 16px 2px 16px 23.87px;
 }
+
 .MuiTextField-root.TextareaInput .MuiFormHelperText-root {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -115,13 +133,16 @@
   margin-left: 0;
   margin: 8px 0 0 0;
 }
+
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-input {
   height: 64px !important;
   /* Handle */
 }
+
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-input::-webkit-scrollbar {
   width: 6px;
 }
+
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-input::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
   border-radius: 24px;
@@ -130,27 +151,60 @@
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root {
   padding: 16px;
 }
+
 .MuiAutocomplete-root.comboboxInput .MuiOutlinedInput-root .MuiAutocomplete-input {
   padding: 0;
-  height: 18px;
+  height: 16px;
+}
+
+.MuiFormControl-root.comboboxInput {
+  width: 100%;
+}
+
+.MuiFormControl-root.comboboxInput .MuiInputLabel-root {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #292D32;
+}
+
+.MuiFormControl-root.comboboxInput .MuiOutlinedInput-root .MuiSelect-select {
+  padding: 16px;
+  min-height: 16px;
+}
+
+.MuiFormControl-root.comboboxInput .MuiOutlinedInput-root svg {
+  position: absolute;
+  top: calc(50% - 11px);
+  right: 9px;
+  cursor: pointer;
+}
+
+.MuiFormControl-root.comboboxInput .MuiOutlinedInput-root .MuiSelect-icon:hover {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 .MuiTextField-root.DisableInput .MuiOutlinedInput-root {
   background-color: rgba(15, 54, 115, 0.1);
 }
+
 .MuiTextField-root.DisableInput .MuiOutlinedInput-input {
   padding: 16px;
-  height: 18px;
+  height: 16px;
 }
 
 .MuiTextField-root.DateInput,
 .MuiTextField-root.SelectInput {
   width: 100%;
 }
+
 .MuiTextField-root.DateInput .MuiOutlinedInput-input,
 .MuiTextField-root.SelectInput .MuiOutlinedInput-input {
   padding: 16px;
-  height: 18px;
+  height: 16px;
 }
 
 .MuiTextField-root.SelectInput .MuiOutlinedInput-root {
@@ -161,26 +215,32 @@
 .MuiFormControl-root.SelectInput .MuiInputLabel-root {
   top: -3px;
 }
+
 .MuiFormControl-root.SelectInput .MuiOutlinedInput-root {
   cursor: pointer;
 }
+
 .MuiFormControl-root.SelectInput .MuiOutlinedInput-root .MuiSelect-select {
   padding: 16px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
 }
+
 .MuiFormControl-root.SelectInput .MuiOutlinedInput-root .MuiSelect-select {
   min-height: 16px;
 }
+
 .MuiFormControl-root.SelectInput .MuiOutlinedInput-root svg {
   position: absolute;
   top: calc(50% - 11px);
   right: 9px;
 }
+
 .MuiFormControl-root.SelectInput .MuiOutlinedInput-root .MuiSelect-icon:hover {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.04);
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

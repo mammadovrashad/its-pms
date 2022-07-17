@@ -1,1 +1,11 @@
-{"version":3,"sources":["style.scss","../../../Common/Variables/style.scss","style.css"],"names":[],"mappings":"AAAQ,yCAAA;AAIR;EACI,aCLc;ACGlB;AFGI;EACI,YAAA;AEDR","file":"style.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAP,sEAAO;AAIP,AAAA,mBAAmB,CAAA;EACf,KAAK,EELS,MAAM;CFSvB;;AALD,AAEI,mBAFe,CAEf,cAAc,CAAC;EACX,MAAM,EAAC,IAAI;CACd",
+    "sources": [
+        "style.scss",
+        "../../../Common/Color/color.scss",
+        "../../../Common/Variables/style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

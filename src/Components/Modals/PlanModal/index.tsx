@@ -36,7 +36,7 @@ function PlanModal({ edit }: IBtn) {
             <Grid container justifyContent='space-between' columnSpacing={2}>
               <Grid item xs={2.4}><DisableInput labelName='Task nömrəsi' defaultValue='1.2' /></Grid>
               <Grid item xs={2.4}><Combobox labelName='Mərhələ' placeholder='Mərhələ' position={stage} /></Grid>
-              <Grid item xs={2.4}><ComboCheckbox emp={emp} /></Grid>
+              <Grid item xs={2.4}><ComboCheckbox labelName="İcraçı" /></Grid>
               <Grid item xs={2.4}><DateInput labelName='Başlama tarixi' /></Grid>
               <Grid item xs={2.4}><DateInput labelName='Bitmə tarixi' /></Grid>
             </Grid>
