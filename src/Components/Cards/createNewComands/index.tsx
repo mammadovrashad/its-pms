@@ -13,9 +13,7 @@ const CreateNewTeam: React.FC = () => {
           <Typography variant="h5" component="div">
             Komanda yoxdur, yeni komanda yarat
           </Typography>
-          <Button size="small">
-            <AddMemberModal/>
-          </Button>
+          <AddMemberModal/>
         </CardActions>
       </BasicCard>
     </div>

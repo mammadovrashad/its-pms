@@ -1,12 +1,14 @@
 @import '../../../Common/Fonts/fonts.css';
 @import '../../../Common/Color/color.scss';
+
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-weight: 400;
-    font-style: normal;
-  }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+}
+
 //   .MuiModal-root{
 //     .MuiBox-root{
 //         .MuiGrid-root{
@@ -17,21 +19,22 @@
 //                line-height: 140%;
 //                color:#000000;
 //                text-align: center;
-              
+
 //             }
 //         }
 //     }
 // }
 
-.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop{
-  position: absolute!important;
-  width: 100%!important;
-  height: 100%!important;
-  left:0px!important;
-  top:0px!important;
-  backdrop-filter: blur(6px)!important;
-  background-color: $color-blur!important;
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  left: 0px !important;
+  top: 0px !important;
+  backdrop-filter: blur(6px) !important;
+  background-color: $color-blur !important;
 }
+
     .styleplan{
         position: absolute;
         // width: 88%;
@@ -57,4 +60,3 @@
   top: -3%;
 
     }
-

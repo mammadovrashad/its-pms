@@ -15,10 +15,10 @@ import AddPlanModal from './Components/Modals/addPlanModal';
 const App: React.FC = () => {
   return (
     <Fragment>
-       <Header />
-      <AddPlanModal edit ={true} />
-      <AddMemberModal />
-       </Fragment>
+      <Header />
+      <CreatePlan />
+    </Fragment>
+
   )
 }
 

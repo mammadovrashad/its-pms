@@ -1,6 +1,7 @@
 @import '../../../Common/Fonts/fonts.css';
 @import '../../../Common/Color/color.scss';
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,20 +13,39 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 24px 0;
     }
+
     .MuiTypography-root {
         font-size: 24px;
         line-height: 24px;
-        font-family: Poopins;
+        font-family: Poppins;
         font-weight: 500;
+        margin-bottom: 32px;
     }
-    .MuiButton-root{
-        font-size: 14px;
-        line-height: 14px;
-        padding-top: 20px;
-        font-family: Poopins;
-        font-weight: 500;
-    }
-   
 
+    .MuiButton-root {
+        position: relative;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0;
+        padding: 0;
+        font-family: Poppins;
+        color: #068FDB;
+        text-transform: none;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &::before {
+            content: '';
+            bottom: -4px;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: #068FDB;
+        }
+    }
 }

@@ -15,7 +15,6 @@ const Textarea = ({ labelName, maxCharCount, helpertext }: any) => {
     return (
         <TextField
             id="outlined-textarea"
-            // helperText={`${char.length}/${maxCharCount}`}
             helperText={helpertext ? `${char.length}/${maxCharCount}` : "" }
             inputProps={{ maxLength: maxCharCount }}
             value={char}
@@ -28,7 +27,6 @@ const Textarea = ({ labelName, maxCharCount, helpertext }: any) => {
             multiline
             rows={4}
             placeholder="Layihə üzrə qeydlər"
-            // margin='normal'
             className="TextareaInput"
         />
     )
