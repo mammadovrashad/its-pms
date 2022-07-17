@@ -24,10 +24,10 @@ const NewProject: React.FC = () => {
                             <Header/>
                         </Item>
                     </Grid>
-                    <Grid item xs={12}>
-                        <Item className='container-item'>
+                    <Grid item  xs={12} sx={{display:'flex',justifyContent:'center'}}>
+                        <Item className='container-item' style={{width:'1280px',justifyContent:'flex-start'}}>
                             <Typography className='info'>
-                               İlkin layihə məlumatları
+                                Yeni layihə
                             </Typography>
                         </Item>
                     </Grid>
