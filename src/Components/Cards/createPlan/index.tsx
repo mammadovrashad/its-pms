@@ -1,4 +1,4 @@
-import { Button, CardActions, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import PlanModal from '../../Modals/PlanModal';
 import BasicCard from '../index';
 import './style.css';

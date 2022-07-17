@@ -3,10 +3,10 @@ import { Button } from '@mui/material';
 // Style
 import './style.scss';
 
-const DeleteEditButton = ({action}:any) => {
+const DeleteEditButton = ({ action }: any) => {
     return (
         <Button
-onClick={action}
+            onClick={action}
             className='customDeleteEditButton'
             variant="outlined"
         >

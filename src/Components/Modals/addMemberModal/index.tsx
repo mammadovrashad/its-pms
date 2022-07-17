@@ -30,7 +30,7 @@ const AddMemberModal: React.FC = () => {
             </Grid>
             <Grid container columnSpacing={3} justifyContent='space-between' >
               <Grid item xs={5} ><Combobox labelName='Rol' placeholder='Front-End' position={position} /></Grid>
-              <Grid item xs={5} ><ComboCheckbox emp={emp} /></Grid>
+              <Grid item xs={5} ><ComboCheckbox labelName="Əməkdaş" /></Grid>
               <Grid item >
                 <ActionButton />
               </Grid>

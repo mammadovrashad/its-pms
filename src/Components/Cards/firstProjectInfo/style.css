@@ -1,11 +1,8 @@
-@import '../../../Common/Fonts/fonts.css';
 .first-project-info {
   width: 1280px;
 }
+
 .first-project-info .MuiPaper-root {
   border: none;
 }
-.first-project-info .grid-item {
-  border: none;
-  box-shadow: none;
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
