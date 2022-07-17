@@ -1,12 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Modal from '@mui/material/Modal';
-import { createTheme,Grid } from '@mui/material'
+import {Grid } from '@mui/material'
 import './style.css'
 import '../../../Common/Fonts/fonts.css';
 import AddMemberTable from '../../Tables/addMemberTable'
-import { ThemeProvider } from '@emotion/react';
 import Combobox from '../../Inputs/Combobox';
 import ComboCheckbox from '../../Inputs/ComboCheckbox'
 import { emp, position } from '../../../Pages/firstWindows';
@@ -14,19 +12,6 @@ import ActionButton from '../../Buttons/ActionButton';
 import ContainedButton from '../../Buttons/ContainedButton';
 import AbsoluteCloseButton from '../../Buttons/AbsoluteCloseButton';
 import BasicModal from '..';
-const theme = createTheme({
-  typography: {
-    fontFamily: [
-      "Poppins",
-      "sans-serif"
-    ].join(",")
-  },
-  palette: {
-    primary: {
-      main: '#068FDB'
-    }
-  }
-})
 
 const AddMemberModal: React.FC = () => {
   const [open, setOpen] = React.useState<any>(false);
@@ -34,7 +19,7 @@ const AddMemberModal: React.FC = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <ThemeProvider theme={theme}>
+   <React.Fragment>
       <Button onClick={handleOpen}>Komanda yarat</Button>
      <BasicModal open={open}> 
     <Box className='styleaddMember'>
@@ -61,10 +46,7 @@ const AddMemberModal: React.FC = () => {
          </Grid>
          </Box>
          </BasicModal>
-    </ThemeProvider>
-
-
-
+   </React.Fragment>
   );
 }
 export default AddMemberModal

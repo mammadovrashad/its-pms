@@ -31,17 +31,17 @@ export const emp = [
   { id: 7, label: 'Nərmin Ağayeva' },
   { id: 8, label: 'Nərmin Ağayeva' },
 ]
-
+ export const stage = [
+  { id: 1, label: 'Analiz' },
+  { id: 2, label: 'Dizayn' },
+  { id: 3, label: 'Development' },
+  { id: 4, label: 'Test' },
+  { id: 5, label: 'Demo' },
+  { id: 6, label: 'Tətbiq' },
+]
 const FirstWindow = () => {
 
-  const stage = [
-    { id: 1, label: 'Analiz' },
-    { id: 2, label: 'Dizayn' },
-    { id: 3, label: 'Development' },
-    { id: 4, label: 'Test' },
-    { id: 5, label: 'Demo' },
-    { id: 6, label: 'Tətbiq' },
-  ]
+  
 
   return (
     <div>
