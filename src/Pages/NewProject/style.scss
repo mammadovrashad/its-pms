@@ -1,4 +1,5 @@
 @import '../../Common/Variables/style.scss';
+@import '../../Common/Color/color.scss';
 
 .new-project{
     display: flex;
@@ -13,9 +14,11 @@
         border: none;
         padding: 0px;
     }
-    // .info{
-    //     width: $countainer-width;
-    // }
-
-  
+    .info{
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 500;
+        font-family: Poopins;
+        color:$color-Lightblue;
+    }
 }
