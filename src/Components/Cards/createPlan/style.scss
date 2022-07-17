@@ -1,8 +1,13 @@
 @import '../../../Common/Fonts/fonts.css';
 @import '../../../Common/Color/color.scss';
+@import '../../../Common/Variables/style.scss';
 
 
 .create-plan {
+    width:$countainer-width;
+    .MuiPaper-root {
+        border:none;
+    }
     .MuiCardActions-root.card-action {
         display: flex;
         flex-direction: column;

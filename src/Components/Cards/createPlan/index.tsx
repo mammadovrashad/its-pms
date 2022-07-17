@@ -6,13 +6,11 @@ import './style.css';
 const CreatePlan = () => {
   return (
     <div className='create-plan'>
-      <BasicCard>
-        <CardActions className='card-action'>
+      <BasicCard> 
           <Typography variant="h5" component="div">
             Fəaliyyət planı yoxdur, yeni plan yarat
           </Typography>
           <AddPlanModal edit={false} />
-        </CardActions>
       </BasicCard>
     </div>
   )
