@@ -9,6 +9,8 @@ import CreatePlan from './Components/Cards/createPlan';
 // import DeletePlanModal from './Components/Modals/DeletePlanModal';
 
 import Header from './Components/Header';
+import AddMemberModal from './Components/Modals/addMemberModal';
+import AddPlanModal from './Components/Modals/addPlanModal';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +18,7 @@ const App: React.FC = () => {
       <Header />
       <CreatePlan />
     </Fragment>
+
   )
 }
 

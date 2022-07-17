@@ -37,13 +37,11 @@
   padding: 16px 73px;
   max-width: 165px;
 }
-
 .MuiButton-root.Mui-disabled.customContainedButton {
   background: #BBBBBB;
   border-radius: 6px;
   color: #FFFFFF;
 }
-
 .MuiButton-root.customIconLabelBtn {
   color: #292D32;
 }

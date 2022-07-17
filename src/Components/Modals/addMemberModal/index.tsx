@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
-import { createTheme, Fab, Grid } from '@mui/material'
+import { createTheme,Grid } from '@mui/material'
 import './style.css'
 import '../../../Common/Fonts/fonts.css';
 import AddMemberTable from '../../Tables/addMemberTable'
@@ -13,7 +13,7 @@ import AddIcon from '@mui/icons-material/Add';
 import { emp, position } from '../../../Pages/firstWindows';
 import ActionButton from '../../Buttons/ActionButton';
 import ContainedButton from '../../Buttons/ContainedButton';
-
+import AbsoluteCloseButton from '../../Buttons/AbsoluteCloseButton';
 const theme = createTheme({
   typography: {
     fontFamily: [
@@ -41,6 +41,7 @@ const AddMemberModal: React.FC = () => {
         open={open}
       >
         <Box className='styleaddMember'>
+        <div className='div-addmember'><AbsoluteCloseButton action={handleClose} /></div>
           <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
             <Grid item xs={12}>
               <h1 className='title1'>Komanda üzvü əlavə et</h1>
