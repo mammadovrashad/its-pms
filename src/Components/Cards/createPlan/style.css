@@ -1,10 +1,4 @@
 @import '../../../Common/Fonts/fonts.css';
-.create-plan {
-  width: 1280px;
-}
-.create-plan .MuiPaper-root {
-  border: none;
-}
 .create-plan .MuiCardActions-root.card-action {
   display: flex;
   flex-direction: column;

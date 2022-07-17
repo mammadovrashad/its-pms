@@ -9,7 +9,7 @@
 
 .title4 {
   font-family: Poppins, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   color: #000000;
@@ -43,11 +43,10 @@
   padding-right: 63px;
   padding-bottom: 64px;
   margin: auto;
-  overflow: auto;
 }
 
 .div-delplan {
   position: absolute;
-  right: 0%;
-  top: 0%;
+  right: -2%;
+  top: -4%;
 }/*# sourceMappingURL=style.css.map */
