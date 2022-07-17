@@ -23,15 +23,15 @@ export const position = [
 ];
 export const emp = [
   { id: 1, label: 'Nərmin Ağayeva' },
-  { id: 2, label: 'Nərmin Ağayeva' },
-  { id: 3, label: 'Nərmin Ağayeva' },
-  { id: 4, label: 'Nərmin Ağayeva' },
-  { id: 5, label: 'Nərmin Ağayeva' },
-  { id: 6, label: 'Nərmin Ağayeva' },
-  { id: 7, label: 'Nərmin Ağayeva' },
+  { id: 2, label: 'Oliver Hansen' },
+  { id: 3, label: 'Van Henry' },
+  { id: 4, label: 'April Tucker' },
+  { id: 5, label: 'Ralph Hubbard' },
+  { id: 6, label: 'Omar Alexander' },
+  { id: 7, label: 'Carlos Abbott' },
   { id: 8, label: 'Nərmin Ağayeva' },
 ]
- export const stage = [
+export const stage = [
   { id: 1, label: 'Analiz' },
   { id: 2, label: 'Dizayn' },
   { id: 3, label: 'Development' },
@@ -41,7 +41,7 @@ export const emp = [
 ]
 const FirstWindow = () => {
 
-  
+
 
   return (
     <div>
@@ -83,17 +83,17 @@ const FirstWindow = () => {
       <br /><br />
 
       <ComboCheckbox
-        emp={emp}
+        labelName="İcraçı"
       />
 
-<br /><br />
+      <br /><br />
 
       <DisableInput
         labelName={"Task nömrəsi"}
         defaultValue={"1.2"}
       />
 
-<br /><br />
+      <br /><br />
 
       <DateInput
         labelName={"Bitmə tarixi"}

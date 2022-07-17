@@ -1,7 +1,9 @@
-@import '../../../Common/Fonts/fonts.css';
+@import url(d:\Desktop SSD\Programming\ITS\its-pms\src\Common\Fonts\fonts.css);
 .first-project-info {
   width: 1280px;
 }
+
 .first-project-info .MuiPaper-root {
   border: none;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
