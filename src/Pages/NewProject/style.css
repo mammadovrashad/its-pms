@@ -16,13 +16,6 @@
   font-size: 32px;
   line-height: 32px;
   font-weight: 500;
-  font-family: Poopins;
+  font-family: Poppins;
   color: #068FDB;
-}
-.new-project .grid-container {
-  display: flex;
-  justify-content: center;
-}
-.new-project .grid-container .header-container {
-  width: 1440px;
 }/*# sourceMappingURL=style.css.map */
