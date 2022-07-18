@@ -63,9 +63,7 @@ function AddPlanModal({ edit}: IBtn) {
       <Button onClick={handleOpen}>Plan Yarat</Button>
       <Modal
         open={open}
-      >
-     <div className="btn-modal">
-    
+      >  
           <Box className='styleplan'>
           {!edit && <div className='div-addplan'><AbsoluteCloseButton action={handleClose} /></div>}
         <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
@@ -113,7 +111,6 @@ function AddPlanModal({ edit}: IBtn) {
 
           </Box>
         {/* </div> */}
-     </div>
       </Modal>
     </ThemeProvider>
   );
