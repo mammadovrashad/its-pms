@@ -7,16 +7,27 @@
 .MuiTextField-root.DisableInput,
 .MuiTextField-root.DateInput,
 .MuiAutocomplete-root .MuiFormControl-root.SelectInput {
-    .MuiOutlinedInput-root {
-        color: #292D32;
-        background-color: #FFFFFF;
-        border: none;
-        border-radius: 6px;
+
+    .MuiInputLabel-root {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 16px;
+        letter-spacing: 0;
+        color: #292D32;
+    }
+
+    .MuiOutlinedInput-root {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0;
+        color: #292D32;
+        background-color: #FFFFFF;
+        border-radius: 6px;
 
         &:hover .MuiOutlinedInput-notchedOutline {
             border: 0.4px solid #0F3673;
@@ -31,7 +42,6 @@
         }
     }
 
-    .MuiInputLabel-root,
     .MuiOutlinedInput-input {
         line-height: 16px;
     }
@@ -51,46 +61,7 @@
     */
 }
 
-.MuiAutocomplete-root .MuiFormControl-root.SelectInput {
-    .MuiInputLabel-root {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 16px;
-    }
-
-    .MuiOutlinedInput-root {
-        padding: 16px;
-
-        .MuiOutlinedInput-input {
-            padding: 0;
-        }
-    }
-}
-
-.MuiAutocomplete-popper {
-
-    li:hover {
-        background-color: #068FDB !important;
-        color: #FFFFFF;
-    }
-
-    li:focus {
-        background-color: #068FDB !important;
-    }
-
-    .MuiAutocomplete-listbox {
-        background: #FFFFFF;
-        border: 1px solid rgba(15, 54, 115, 0.12);
-        border-radius: 6px;
-    }
-}
-
-.MuiAutocomplete-popper li:hover {
-    background-color: #000000;
-}
-
+/* Basic Input */
 .MuiTextField-root.MultilineInput {
     .MuiOutlinedInput-root {
         padding: 16px 15.58px;
@@ -101,6 +72,7 @@
     }
 }
 
+/* Textarea Input */
 .MuiTextField-root.TextareaInput {
     .MuiOutlinedInput-root {
         padding: 16px 2px 16px 23.87px;
@@ -132,6 +104,7 @@
     }
 }
 
+// Combobox Input - Rol, Mərhələ
 .MuiAutocomplete-root.comboboxInput {
     .MuiOutlinedInput-root {
         padding: 16px;
@@ -143,17 +116,48 @@
     }
 }
 
+// Select Input - Status
+.MuiAutocomplete-root .MuiFormControl-root.SelectInput {
+
+    .MuiInputLabel-root.Mui-focused {
+        top: -3px;
+    }
+
+    .MuiOutlinedInput-root {
+        padding: 16px;
+        cursor: pointer;
+
+        .MuiOutlinedInput-input {
+            padding: 0;
+            height: 16px;
+
+            .MuiSelect-select {
+                padding: 16px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 16px;
+                min-height: 16px;
+            }
+
+            /* svg {
+                position: absolute;
+                top: calc(50% - 11px);
+                right: 9px;
+            }
+
+            .MuiSelect-icon:hover {
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.04);
+            } */
+        }
+    }
+}
+
+// ComboCheckBox (Select) - Əməkdaş, İcraçı
 .MuiFormControl-root.comboboxInput {
     width: 100%;
-
-    .MuiInputLabel-root {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 16px;
-        color: #292D32;
-    }
 
     .MuiOutlinedInput-root {
         .MuiSelect-select {
@@ -175,6 +179,7 @@
     }
 }
 
+// Disable Input
 .MuiTextField-root.DisableInput {
     .MuiOutlinedInput-root {
         background-color: rgba(15, 54, 115, 0.1);
@@ -186,8 +191,8 @@
     }
 }
 
-.MuiTextField-root.DateInput,
-.MuiTextField-root.SelectInput {
+// Date Input
+.MuiTextField-root.DateInput {
     width: 100%;
 
     .MuiOutlinedInput-input {
@@ -196,42 +201,20 @@
     }
 }
 
-.MuiTextField-root.SelectInput {
-    .MuiOutlinedInput-root {
-        color: white
-    }
-}
+.MuiAutocomplete-popper {
 
-.MuiFormControl-root.SelectInput {
-    .MuiInputLabel-root {
-        top: -3px;
+    li:hover {
+        background-color: #068FDB !important;
+        color: #FFFFFF;
     }
 
-    .MuiOutlinedInput-root {
-        cursor: pointer;
+    li:focus {
+        background-color: #068FDB !important;
+    }
 
-        .MuiSelect-select {
-            padding: 16px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 16px;
-        }
-
-        .MuiSelect-select {
-            min-height: 16px;
-        }
-
-        svg {
-            position: absolute;
-            top: calc(50% - 11px);
-            right: 9px;
-        }
-
-        .MuiSelect-icon:hover {
-            border-radius: 50%;
-            background-color: rgba(0, 0, 0, 0.04);
-        }
+    .MuiAutocomplete-listbox {
+        background: #FFFFFF;
+        border: 1px solid rgba(15, 54, 115, 0.12);
+        border-radius: 6px;
     }
 }

@@ -1,34 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 .MuiButton-root.customContainedButton, .MuiButton-root.customDeleteEditButton, .MuiButton-root.customIconLabelBtn {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   border-radius: 6px;
   text-transform: capitalize;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   max-height: 48px;
   letter-spacing: 0;
 }
-
 .MuiButton-root.MuiButton-contained.customContainedButton {
   background: #068FDB;
 }
-
 .MuiButton-root.MuiButton-contained.customContainedButton:hover {
   background: #068FDB;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
-
 .MuiButton-root.MuiButton-outlined.customContainedButton {
   background: #FFFFFF;
   color: #068FDB;
   border: 0.6px solid #068FDB;
 }
-
 .MuiButton-root.MuiButton-outlined.customDeleteEditButton {
   background: #FFFFFF;
   border: 1px solid #F05353;
@@ -37,22 +31,18 @@
   padding: 16px 73px;
   max-width: 165px;
 }
-
 .MuiButton-root.Mui-disabled.customContainedButton {
   background: #BBBBBB;
   border-radius: 6px;
   color: #FFFFFF;
 }
-
 .MuiButton-root.customIconLabelBtn {
   color: #292D32;
 }
-
 .MuiButton-root.customIconLabelBtn .MuiButton-startIcon {
   width: 20px;
   height: 20px;
 }
-
 .MuiButton-root.customIconLabelBtn .MuiButton-startIcon .MuiButtonBase-root {
   padding: 2px;
   width: 20px;
@@ -70,13 +60,9 @@
 
 .MuiButtonBase-root.customActionButton {
   background: #6FC03D;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
-
 .MuiButtonBase-root.customActionButton:hover {
   background: #6FC03D;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-/*# sourceMappingURL=style.css.map */
+  box-shadow: none;
+}/*# sourceMappingURL=style.css.map */
