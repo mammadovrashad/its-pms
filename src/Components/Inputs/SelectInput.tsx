@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Select, SelectChangeEvent, MenuItem, FormControl, InputLabel } from '@mui/material';
+import { TextField, Autocomplete } from "@mui/material";
+import { useRef, useState } from "react";
 
 // Style
 import './style.scss';
@@ -7,53 +7,62 @@ import './style.scss';
 // Import Icon
 import ChevronDownIcon from './ChevronDownIcon';
 
-const stages = [
-  {
-    value: 'Açıq',
-  },
-  {
-    value: 'İcradadır'
-  },
-  {
-    value: 'Gecikir',
-  },
-  {
-    value: 'Dayandırılıb',
-  },
-  {
-    value: 'Bağlı',
-  },
-];
+export default function SelectInput() {
 
-const SelectInput = () => {
+  const inputRef: any = useRef();
 
-  const [stage, setStage] = useState('Açıq');
+  const [labels, setLabels] = useState([
+    { label: "Açıq" },
+    { label: "İcradadır" },
+    { label: "Gecikir" },
+    { label: "Dayandırılıb" },
+    { label: "Bağlı" },
+  ]);
 
-  const handleChange = (event: SelectChangeEvent) => {
-    console.log(event.target.value);
-
-    setStage(event.target.value as string);
+  const changeColor = (event: any, value: any) => {
+    if (value !== null) {
+      switch (value.label) {
+        case "Açıq":
+          inputRef.current.style.backgroundColor = "#068FDB";
+          break;
+        case "İcradadır":
+          inputRef.current.style.backgroundColor = "yellow";
+          break;
+        case "Gecikir":
+          inputRef.current.style.backgroundColor = "teal";
+          break;
+        case "Dayandırılıb":
+          inputRef.current.style.backgroundColor = "red";
+          break;
+        case "Bağlı":
+          inputRef.current.style.backgroundColor = "#6FC03D";
+          break;
+        default: inputRef.current.style.backgroundColor = "white";
+      }
+    }
+    else {
+      inputRef.current.style.backgroundColor = "white";
+    }
   };
 
   return (
-    <FormControl className="SelectInput" fullWidth>
-      <InputLabel id="demo-simple-select-label">Status</InputLabel>
-      <Select
-        labelId="demo-simple-select-label"
-        id="outlined-select"
-        value={stage}
-        label="Status"
-        onChange={handleChange}
-        IconComponent={ChevronDownIcon}
-      >
-        {stages.map((option) => (
-          <MenuItem key={option.value} value={option.value}>
-            {option.value}
-          </MenuItem>
-        ))}
-      </Select>
-    </FormControl>
-  )
+    <Autocomplete
+      popupIcon={<ChevronDownIcon />}
+      disableClearable
+      disablePortal
+      fullWidth
+      id="combo-box-demo"
+      options={labels}
+      onChange={(event, value: any) => changeColor(event, value)}
+      renderInput={(params) => (
+        <TextField
+          {...params}
+          label="Status"
+          placeholder="Status"
+          ref={inputRef}
+          className="SelectInput"
+        />
+      )}
+    />
+  );
 }
-
-export default SelectInput

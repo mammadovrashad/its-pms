@@ -35,9 +35,7 @@ const Combobox = ({labelName}: any) => {
     const [personName, setPersonName] = useState<string[]>([]);
 
     const handleChange = (event: SelectChangeEvent<typeof personName>) => {
-        const {
-            target: { value },
-        } = event;
+        const { target: { value }, } = event;
         setPersonName(
             typeof value === 'string' ? value.split(',') : value,
         );
