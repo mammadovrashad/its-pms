@@ -18,9 +18,7 @@ const Header:React.FC=()=>{
 
     return(
 <section className='container-header'> 
-<Grid container sx={{width:"100%",
-height:'100%',
-padding:'0px 45px'}} alignItems='center' justifyContent='space-between'>
+<Grid container className='header-menu' alignItems='center' justifyContent='space-between'>
 <Grid item >
     <ItsLogo />
 </Grid>

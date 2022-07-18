@@ -1,25 +1,31 @@
 @import '../../../Common/Fonts/fonts.css';
-.create-plan {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.create-team {
   width: 1280px;
 }
-.create-plan .MuiPaper-root {
+.create-team .MuiPaper-root {
   border: none;
 }
-.create-plan .MuiCardActions-root.card-action {
+.create-team .MuiCardActions-root.card-action {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 24px 0;
 }
-.create-plan .MuiTypography-root {
+.create-team .MuiTypography-root {
   font-size: 24px;
   line-height: 24px;
   font-family: Poppins;
   font-weight: 500;
   margin-bottom: 32px;
 }
-.create-plan .MuiButton-root {
+.create-team .MuiButton-root {
   position: relative;
   font-size: 16px;
   font-weight: 500;
@@ -30,10 +36,10 @@
   color: #068FDB;
   text-transform: none;
 }
-.create-plan .MuiButton-root:hover {
+.create-team .MuiButton-root:hover {
   background-color: transparent;
 }
-.create-plan .MuiButton-root::before {
+.create-team .MuiButton-root::before {
   content: "";
   bottom: -4px;
   position: absolute;

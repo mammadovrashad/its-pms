@@ -1,10 +1,15 @@
 @import '../../../Common/Fonts/fonts.css';
 @import '../../../Common/Color/color.scss';
-@import '../../../Common/Variables/style.scss';
+@import '../../../Common//Variables/style.scss';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.create-plan {
-    width:$countainer-width;
+.create-team {
+    width: $countainer-width;
     .MuiPaper-root {
         border:none;
     }

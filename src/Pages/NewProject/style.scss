@@ -1,0 +1,32 @@
+@import '../../Common/Variables/style.scss';
+@import '../../Common/Color/color.scss';
+
+.new-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .container-item{
+        display: flex;
+        justify-content: center;
+        background: none;
+        box-shadow: none;
+        border: none;
+        padding: 0px;
+    }
+    .info{
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 500;
+        font-family: Poppins;
+        color:$color-Lightblue;
+    }
+   
+    // .grid-container{
+    //     display: flex;
+    //     justify-content: center;
+    //     .header-container{
+    //         width: 1440px;
+    //     }
+    // }
+}

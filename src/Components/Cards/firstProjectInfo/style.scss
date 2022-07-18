@@ -1,0 +1,22 @@
+@import '../../../Common/Color/color.scss';
+@import '../../../Common/Fonts/fonts.css';
+@import '../../../Common/Variables/style.scss';
+
+.first-project-info{
+    width: $countainer-width;
+    .MuiPaper-root {
+        border:none;
+    }
+    .grid-item{
+        border: none;
+        box-shadow: none;
+    }
+    .info-text{
+        display: flex;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        font-family: Poppins;
+        color: $color-Lightblue
+    }
+}

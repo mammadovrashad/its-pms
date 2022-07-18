@@ -1,0 +1,19 @@
+@import '../../../Common/Fonts/fonts.css';
+.first-project-info {
+  width: 1280px;
+}
+.first-project-info .MuiPaper-root {
+  border: none;
+}
+.first-project-info .grid-item {
+  border: none;
+  box-shadow: none;
+}
+.first-project-info .info-text {
+  display: flex;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #068FDB;
+}/*# sourceMappingURL=style.css.map */
