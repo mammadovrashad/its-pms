@@ -71,6 +71,7 @@ export default function SelectInput() {
           placeholder="Status"
           ref={inputRef}
           className="SelectInput"
+          type={"button"}
         />
       )}
     />

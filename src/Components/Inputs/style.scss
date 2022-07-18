@@ -119,6 +119,7 @@
 // Select Input - Status
 .MuiAutocomplete-root .MuiFormControl-root.SelectInput {
 
+    .MuiInputLabel-root,
     .MuiInputLabel-root.Mui-focused {
         top: -3px;
     }
@@ -130,6 +131,8 @@
         .MuiOutlinedInput-input {
             padding: 0;
             height: 16px;
+            cursor: pointer;
+            text-align: left;
 
             .MuiSelect-select {
                 padding: 16px;
@@ -201,6 +204,7 @@
     }
 }
 
+// Input Popper (selection)
 .MuiAutocomplete-popper {
 
     li:hover {
@@ -217,4 +221,25 @@
         border: 1px solid rgba(15, 54, 115, 0.12);
         border-radius: 6px;
     }
+}
+
+// CheckComboBox selected (checked)
+.MuiModal-root .MuiPaper-root {
+
+    .MuiMenuItem-root:hover,
+    .MuiMenuItem-root.Mui-selected {
+        background-color: #068FDB !important;
+        color: #FFFFFF;
+    }
+
+    .MuiCheckbox-root {
+        color: #0F3673;
+        border-radius: 3px;
+        padding: 8px;
+    }
+
+    .Mui-checked {
+        color: #FFFFFF;
+    }
+
 }
