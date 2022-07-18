@@ -57,6 +57,9 @@
   height: 34px;
   padding: 4px;
 }
+.MuiButtonBase-root.customIconButton:hover {
+  background: #FFFFFF;
+}
 
 .MuiButtonBase-root.customActionButton {
   background: #6FC03D;
