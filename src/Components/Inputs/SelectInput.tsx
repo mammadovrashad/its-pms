@@ -23,21 +23,31 @@ export default function SelectInput() {
     if (value !== null) {
       switch (value.label) {
         case "Açıq":
-          inputRef.current.style.backgroundColor = "#068FDB";
+          inputRef.current.children[1].style.backgroundColor = "#068FDB";
+          inputRef.current.children[1].style.borderColor = "#068FDB";
+          inputRef.current.children[1].style.color = "#ffffff";
           break;
         case "İcradadır":
-          inputRef.current.style.backgroundColor = "yellow";
+          inputRef.current.children[1].style.backgroundColor = "yellow";
+          inputRef.current.children[1].style.borderColor = "yellow";
+          inputRef.current.children[1].style.color = "#ffffff";
           break;
         case "Gecikir":
-          inputRef.current.style.backgroundColor = "teal";
+          inputRef.current.children[1].style.backgroundColor = "teal";
+          inputRef.current.children[1].style.borderColor = "teal";
+          inputRef.current.children[1].style.color = "#ffffff";
           break;
         case "Dayandırılıb":
-          inputRef.current.style.backgroundColor = "red";
+          inputRef.current.children[1].style.backgroundColor = "red";
+          inputRef.current.children[1].style.borderColor = "red";
+          inputRef.current.children[1].style.color = "#ffffff";
           break;
         case "Bağlı":
-          inputRef.current.style.backgroundColor = "#6FC03D";
+          inputRef.current.children[1].style.backgroundColor = "#6FC03D";
+          inputRef.current.children[1].style.borderColor = "#6FC03D";
+          inputRef.current.children[1].style.color = "#ffffff";
           break;
-        default: inputRef.current.style.backgroundColor = "white";
+        default: inputRef.current.children[1].style.backgroundColor = "white";
       }
     }
     else {
