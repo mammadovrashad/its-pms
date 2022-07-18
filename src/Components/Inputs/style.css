@@ -151,7 +151,6 @@
       top: calc(50% - 11px);
       right: 9px;
   }
-
   .MuiSelect-icon:hover {
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.04);
@@ -212,4 +211,4 @@
   background: #FFFFFF;
   border: 1px solid rgba(15, 54, 115, 0.12);
   border-radius: 6px;
-}/*# sourceMappingURL=style.css.map */
+}

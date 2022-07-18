@@ -18,4 +18,8 @@
   font-weight: 500;
   font-family: Poppins;
   color: #068FDB;
+  
+.new-project .grid-container .header-container {
+  width: 100%;
+
 }/*# sourceMappingURL=style.css.map */
