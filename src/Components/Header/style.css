@@ -1,10 +1,9 @@
-
+@import '../../Common/Fonts/fonts.css';
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-weight: 400;
   font-style: normal;
 }
@@ -12,21 +11,16 @@
 .container-header {
   width: 100%;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #FFFFFF;
 }
-
 .container-header .header-menu {
   width: 1280px;
 }
 
 .title-style {
-  font-family: 'Nunito Sans',sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -37,5 +31,4 @@
 .btn {
   all: unset;
   cursor: pointer;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
