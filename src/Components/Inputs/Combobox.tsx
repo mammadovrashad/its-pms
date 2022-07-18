@@ -21,7 +21,6 @@ const Combobox = ({ labelName, placeholder, position }: any) => {
             className="comboboxInput"
             disableClearable
             popupIcon={<Icon />}
-            // sx={{margin: '20px 0'}}
         />
     )
 }

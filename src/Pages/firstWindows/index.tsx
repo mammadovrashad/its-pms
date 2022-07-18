@@ -41,10 +41,10 @@ export const stage = [
 ]
 const FirstWindow = () => {
 
-
-
   return (
     <div>
+
+      {/* Basic Input */}
       <MultilineInput
         labelName={"Layihənin adı"}
         placeholder={"Dashboard Management Systems"}
@@ -54,6 +54,7 @@ const FirstWindow = () => {
 
       <br /><br />
 
+      {/* Textarea Input */}
       <Textarea
         labelName={"Layihənin qısa izahı"}
         maxCharCount={Infinity}
@@ -62,6 +63,7 @@ const FirstWindow = () => {
 
       <br /><br />
 
+      {/* Textarea Input */}
       <Textarea
         labelName={"Tapşırığın adı"}
         maxCharCount={500}
@@ -70,6 +72,7 @@ const FirstWindow = () => {
 
       <br /><br />
 
+      {/* Combobox - Rol, Mərhələ */}
       <Combobox
         labelName={"Rol"}
         placeholder={"Front-end"}
@@ -78,16 +81,19 @@ const FirstWindow = () => {
 
       <br /><br />
 
+      {/* Select Input - Status */}
       <SelectInput />
 
       <br /><br />
 
+      {/* ComboCheckBox (Select) - Əməkdaş, İcraçı */}
       <ComboCheckbox
         labelName="İcraçı"
       />
 
       <br /><br />
 
+      {/* Disable Input */}
       <DisableInput
         labelName={"Task nömrəsi"}
         defaultValue={"1.2"}
@@ -95,6 +101,7 @@ const FirstWindow = () => {
 
       <br /><br />
 
+      {/* Date Input */}
       <DateInput
         labelName={"Bitmə tarixi"}
       />
