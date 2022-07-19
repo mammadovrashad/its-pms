@@ -18,6 +18,8 @@ import './style.scss';
 
 // Import Icon
 import Icon from './ChevronDownIcon';
+import Check from './Check';
+import Check1 from './Check1';
 
 /* const names = [
     { id: 1, label: 'Nərmin Ağayeva' },
@@ -30,7 +32,7 @@ import Icon from './ChevronDownIcon';
     { id: 8, label: 'Nərmin Ağayeva' },
 ]; */
 
-const Combobox = ({labelName}: any) => {
+const Combobox = ({ labelName }: any) => {
 
     const [personName, setPersonName] = useState<string[]>([]);
 
@@ -57,7 +59,7 @@ const Combobox = ({labelName}: any) => {
                 >
                     {emp.map((name: any) => (
                         <MenuItem key={name.id} value={name.label}>
-                            <Checkbox checked={personName.indexOf(name.label) > -1} />
+                            <Checkbox icon={<Check1 />} checkedIcon={<Check />} checked={personName.indexOf(name.label) > -1} />
                             <ListItemText primary={name.label} />
                         </MenuItem>
                     ))}
