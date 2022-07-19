@@ -10,6 +10,7 @@ import AbsoluteCloseButton from '../../Components/Buttons/AbsoluteCloseButton'
 import ActionButton from '../../Components/Buttons/ActionButton'
 import DeleteEditButton from '../../Components/Buttons/DeleteEditButton'
 import IconLabelButton from '../../Components/Buttons/IconLabelButton'
+import { Container } from '@mui/material'
 
 export const position = [
   { id: 1, label: 'Layihə rəhbəri' },
@@ -42,7 +43,7 @@ export const stage = [
 const FirstWindow = () => {
 
   return (
-    <div>
+    <Container>
 
       {/* Basic Input */}
       <MultilineInput
@@ -158,7 +159,7 @@ const FirstWindow = () => {
 
       <IconLabelButton />
 
-    </div>
+    </Container>
   )
 
 }
