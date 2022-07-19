@@ -7,5 +7,5 @@
   top: 0px !important;
   -webkit-backdrop-filter: blur(6px) !important;
           backdrop-filter: blur(6px) !important;
-  background-color: rgba(244, 250, 255, 0.75);
+  background-color: rgba(244, 250, 255, 0.75) !important;
 }/*# sourceMappingURL=style.css.map */
