@@ -1,5 +1,6 @@
 @import '../../Common/Variables/style.scss';
 @import '../../Common/Color/color.scss';
+@import '../../Common/Variables/style.scss';
 
 .new-project {
     display: flex;
@@ -21,6 +22,9 @@
         font-weight: 500;
         font-family: Poppins;
         color: $color-Lightblue;
+    }
+    .main-container{
+        max-width:$countainer-width;
     }
 
 

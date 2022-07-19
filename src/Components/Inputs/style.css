@@ -136,6 +136,7 @@
   height: 16px;
 }
 
+.MuiAutocomplete-root .MuiFormControl-root.SelectInput .MuiInputLabel-root,
 .MuiAutocomplete-root .MuiFormControl-root.SelectInput .MuiInputLabel-root.Mui-focused {
   top: -3px;
 }
@@ -146,11 +147,14 @@
 .MuiAutocomplete-root .MuiFormControl-root.SelectInput .MuiOutlinedInput-root .MuiOutlinedInput-input {
   padding: 0;
   height: 16px;
+  cursor: pointer;
+  text-align: left;
   /* svg {
       position: absolute;
       top: calc(50% - 11px);
       right: 9px;
   }
+
   .MuiSelect-icon:hover {
       border-radius: 50%;
       background-color: rgba(0, 0, 0, 0.04);
@@ -207,8 +211,26 @@
 .MuiAutocomplete-popper li:focus {
   background-color: #068FDB !important;
 }
+.MuiAutocomplete-popper li[aria-selected=true] {
+  background-color: #068FDB !important;
+  color: #fff;
+}
 .MuiAutocomplete-popper .MuiAutocomplete-listbox {
   background: #FFFFFF;
   border: 1px solid rgba(15, 54, 115, 0.12);
   border-radius: 6px;
 }
+
+.MuiModal-root .MuiPaper-root .MuiMenuItem-root:hover,
+.MuiModal-root .MuiPaper-root .MuiMenuItem-root.Mui-selected {
+  background-color: #068FDB !important;
+  color: #FFFFFF;
+}
+.MuiModal-root .MuiPaper-root .MuiCheckbox-root {
+  color: #0F3673;
+  border-radius: 3px;
+  padding: 8px;
+}
+.MuiModal-root .MuiPaper-root .Mui-checked {
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
