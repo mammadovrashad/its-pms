@@ -6,6 +6,7 @@ const Pages: React.FC = () => {
   return (
     <Fragment>
       <NewProject/>
+      {/* <FirstWindow /> */}
     </Fragment>
   )
 }

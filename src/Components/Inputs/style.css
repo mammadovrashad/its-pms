@@ -41,7 +41,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 14px;
   letter-spacing: 0;
   color: #292D32;
   background-color: #FFFFFF;
@@ -117,7 +117,6 @@
   margin: 8px 0 0 0;
 }
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-input {
-  height: 64px !important;
   /* Handle */
 }
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-input::-webkit-scrollbar {
@@ -213,12 +212,17 @@
 }
 .MuiAutocomplete-popper li[aria-selected=true] {
   background-color: #068FDB !important;
+
+  color: #fff;
+
   color: #FFFFFF;
+
 }
 .MuiAutocomplete-popper .MuiAutocomplete-listbox {
   background: #FFFFFF;
   border: 1px solid rgba(15, 54, 115, 0.12);
   border-radius: 6px;
+
 }
 
 .MuiModal-root .MuiPaper-root .MuiMenuItem-root:hover,
