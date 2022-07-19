@@ -17,7 +17,7 @@ import { emp } from '../../Pages/firstWindows';
 import './style.scss';
 
 // Import Icon
-import Icon from './ChevronDownIcon';
+import Icon from './ChevronDownIcon2';
 import Check from './Check';
 import Check1 from './Check1';
 
