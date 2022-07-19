@@ -212,20 +212,17 @@
 }
 .MuiAutocomplete-popper li[aria-selected=true] {
   background-color: #068FDB !important;
-<<<<<<< HEAD
+
   color: #fff;
-=======
+
   color: #FFFFFF;
->>>>>>> d58c06ead278cb7b655388955d80bda032c062fc
+
 }
 .MuiAutocomplete-popper .MuiAutocomplete-listbox {
   background: #FFFFFF;
   border: 1px solid rgba(15, 54, 115, 0.12);
   border-radius: 6px;
-<<<<<<< HEAD
-=======
 
->>>>>>> d58c06ead278cb7b655388955d80bda032c062fc
 }
 
 .MuiModal-root .MuiPaper-root .MuiMenuItem-root:hover,

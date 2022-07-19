@@ -5,6 +5,7 @@ import ItsLogo from './img/Asset13';
 import Avatar from './img/Avatar';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { Grid, Menu, MenuItem} from '@mui/material';
+import Button from '@mui/material/Button';
 
 const Header:React.FC=()=>{
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -24,24 +25,26 @@ const Header:React.FC=()=>{
 </Grid>
 <Grid item>
 <Grid container alignItems='center'  spacing={1.5}>
-<Grid item>
+{/* <Grid item>
     <Avatar />
-</Grid>
-<Grid item>
+</Grid> */}
+{/* <Grid item>
     <p className='title-style'>Ağarəhim Quluzadə</p>
-</Grid>
-<Grid item>
-<button
+</Grid> */}
+<Grid item >
+<Button
 className='btn'
  id="basic-button"
  aria-controls={open1 ? 'basic-menu' : undefined}
  aria-haspopup="true"
  aria-expanded={open1 ? 'true' : undefined}
  onClick={handleDropClick}
-
+endIcon={ <ExpandMoreIcon sx={{color:'black'}} />}
+startIcon={ <Avatar />}
+disableRipple
       >
-        <ExpandMoreIcon />
-      </button>
+       <p className='title-style'>Ağarəhim Quluzadə</p>
+      </Button>
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
@@ -53,7 +56,7 @@ className='btn'
       >
         <MenuItem onClick={handleDropClose}>
         <LogoutIcon></LogoutIcon>
-        Profildən çıx
+       <p className='logout'>Profildən çıx</p>
         </MenuItem>
       </Menu>
 </Grid>
