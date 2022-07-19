@@ -5,8 +5,8 @@ import FirstWindow from './firstWindows';
 const Pages: React.FC = () => {
   return (
     <Fragment>
-      {/* <NewProject/> */}
-      <FirstWindow />
+      <NewProject/>
+      {/* <FirstWindow /> */}
     </Fragment>
   )
 }
