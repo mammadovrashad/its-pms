@@ -17,7 +17,7 @@ import { emp } from '../../Pages/firstWindows';
 import './style.scss';
 
 // Import Icon
-import Icon from './ChevronDownIcon';
+import Icon from './ChevronDownIcon2';
 import Check from './Check';
 import Check1 from './Check1';
 
@@ -54,12 +54,12 @@ const Combobox = ({ labelName }: any) => {
                     value={personName}
                     onChange={handleChange}
                     input={<OutlinedInput label={labelName} />}
-                    renderValue={(selected) => selected.join(', ')}
+                    renderValue={(selected) => selected.map((obj: any) => emp[obj - 1].label).join(", ")}
                     IconComponent={Icon}
                 >
                     {emp.map((name: any) => (
-                        <MenuItem key={name.id} value={name.label}>
-                            <Checkbox icon={<Check1 />} checkedIcon={<Check />} checked={personName.indexOf(name.label) > -1} />
+                        <MenuItem key={name.id} value={name.id}>
+                            <Checkbox icon={<Check1 />} checkedIcon={<Check />} checked={personName.indexOf(name.id) > -1} />
                             <ListItemText primary={name.label} />
                         </MenuItem>
                     ))}
