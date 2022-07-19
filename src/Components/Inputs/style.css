@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import '../../Common/Fonts/fonts.css';
 .MuiTextField-root.MultilineInput,
 .MuiTextField-root.TextareaInput,
 .MuiAutocomplete-root.comboboxInput,
@@ -22,7 +22,7 @@
 .MuiTextField-root.DisableInput .MuiInputLabel-root,
 .MuiTextField-root.DateInput .MuiInputLabel-root,
 .MuiAutocomplete-root .MuiFormControl-root.SelectInput .MuiInputLabel-root {
-  font-family: "Poppins";
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -37,7 +37,7 @@
 .MuiTextField-root.DisableInput .MuiOutlinedInput-root,
 .MuiTextField-root.DateInput .MuiOutlinedInput-root,
 .MuiAutocomplete-root .MuiFormControl-root.SelectInput .MuiOutlinedInput-root {
-  font-family: "Poppins";
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -107,7 +107,7 @@
   padding: 16px 2px 16px 23.87px;
 }
 .MuiTextField-root.TextareaInput .MuiFormHelperText-root {
-  font-family: "Poppins";
+  font-family: Poppins;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -136,6 +136,7 @@
   height: 16px;
 }
 
+.MuiAutocomplete-root .MuiFormControl-root.SelectInput .MuiInputLabel-root,
 .MuiAutocomplete-root .MuiFormControl-root.SelectInput .MuiInputLabel-root.Mui-focused {
   top: -3px;
 }
@@ -146,6 +147,8 @@
 .MuiAutocomplete-root .MuiFormControl-root.SelectInput .MuiOutlinedInput-root .MuiOutlinedInput-input {
   padding: 0;
   height: 16px;
+  cursor: pointer;
+  text-align: left;
   /* svg {
       position: absolute;
       top: calc(50% - 11px);
@@ -159,7 +162,7 @@
 }
 .MuiAutocomplete-root .MuiFormControl-root.SelectInput .MuiOutlinedInput-root .MuiOutlinedInput-input .MuiSelect-select {
   padding: 16px;
-  font-family: "Poppins";
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -208,8 +211,27 @@
 .MuiAutocomplete-popper li:focus {
   background-color: #068FDB !important;
 }
+.MuiAutocomplete-popper li[aria-selected=true] {
+  background-color: #068FDB !important;
+  color: #FFFFFF;
+}
 .MuiAutocomplete-popper .MuiAutocomplete-listbox {
   background: #FFFFFF;
   border: 1px solid rgba(15, 54, 115, 0.12);
   border-radius: 6px;
+
+}
+
+.MuiModal-root .MuiPaper-root .MuiMenuItem-root:hover,
+.MuiModal-root .MuiPaper-root .MuiMenuItem-root.Mui-selected {
+  background-color: #068FDB !important;
+  color: #FFFFFF;
+}
+.MuiModal-root .MuiPaper-root .MuiCheckbox-root {
+  color: #0F3673;
+  border-radius: 3px;
+  padding: 8px;
+}
+.MuiModal-root .MuiPaper-root .Mui-checked {
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

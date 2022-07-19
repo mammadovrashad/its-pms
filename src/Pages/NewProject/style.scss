@@ -1,12 +1,13 @@
 @import '../../Common/Variables/style.scss';
 @import '../../Common/Color/color.scss';
 
-.new-project{
+.new-project {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .container-item{
+
+    .container-item {
         display: flex;
         justify-content: center;
         background: none;
@@ -19,8 +20,8 @@
         line-height: 32px;
         font-weight: 500;
         font-family: Poppins;
-        color:$color-Lightblue;
+        color: $color-Lightblue;
     }
-   
+
 
 }

@@ -21,7 +21,7 @@ const FirstProjectInfo: React.FC = () => {
         <div className='first-project-info'>
             <BasicCard>
                 <Box sx={{ flexGrow: 1 }}>
-                    <Grid container spacing={4}>
+                    <Grid container spacing={2}>
                         <Grid item xs={12}>
                             <Item className='grid-item'>
                                 <Typography className='info-text'>
