@@ -69,6 +69,7 @@ const FirstWindow = () => {
         labelName={"Tapşırığın adı"}
         maxCharCount={500}
         helpertext={true}
+        maxHeight="64px"
       />
 
       <br /><br />

@@ -117,7 +117,6 @@
   margin: 8px 0 0 0;
 }
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-input {
-  height: 64px !important;
   /* Handle */
 }
 .MuiTextField-root.TextareaInput .MuiOutlinedInput-input::-webkit-scrollbar {

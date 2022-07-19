@@ -46,7 +46,7 @@ const FirstProjectInfo: React.FC = () => {
                         </Grid>
                         <Grid item xs={12}>
                             <Item className='grid-item'>
-                                <Textarea labelName='Layihənin qısa izahı'/>
+                                <Textarea labelName='Layihənin qısa izahı' maxHeight="64px"/>
                             </Item>
                         </Grid>
                     </Grid>

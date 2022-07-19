@@ -8,7 +8,7 @@ import {
 // Style
 import './style.scss';
 
-const Textarea = ({ labelName, maxCharCount, helpertext }: any) => {
+const Textarea = ({ labelName, maxCharCount, helpertext, maxHeight }: any) => {
 
     const [char, setChar] = useState("");
 
@@ -16,6 +16,7 @@ const Textarea = ({ labelName, maxCharCount, helpertext }: any) => {
         <TextField
             id="outlined-textarea"
             helperText={helpertext ? `${char.length}/${maxCharCount}` : "" }
+            sx={[{".MuiOutlinedInput-input": {height: `${maxHeight} !important`}}]}
             inputProps={{ maxLength: maxCharCount }}
             value={char}
             onChange={(event) =>{

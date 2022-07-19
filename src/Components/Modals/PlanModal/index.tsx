@@ -47,8 +47,8 @@ function PlanModal({ edit }: IBtn) {
               <Grid item xs={3}><SelectInput /></Grid>
             </Grid>
             <Grid container justifyContent='space-between' columnSpacing={2}>
-              <Grid item xs={6}><Textarea labelName='Tapşırığın adı' maxCharCount='2000' helpertext={true} ></Textarea></Grid>
-              <Grid item xs={6}><Textarea labelName='Tapşırıq üzrə qeydlər' maxCharCount='4000' helpertext={true}></Textarea></Grid>
+              <Grid item xs={6}><Textarea labelName='Tapşırığın adı' maxHeight="88px" maxCharCount='2000' helpertext={true} ></Textarea></Grid>
+              <Grid item xs={6}><Textarea labelName='Tapşırıq üzrə qeydlər' maxHeight="88px" maxCharCount='4000' helpertext={true}></Textarea></Grid>
             </Grid>
             <Grid container justifyContent='space-between'>
               <Grid item >
