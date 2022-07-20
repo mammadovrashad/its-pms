@@ -1,5 +1,5 @@
 import './style.css';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ItsLogo from './img/Asset13';
 import Avatar from './img/Avatar';
@@ -11,11 +11,24 @@ const Header: React.FC = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open1 = Boolean(anchorEl);
   const handleDropClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    changeLogOut();
     setAnchorEl(event.currentTarget);
   };
   const handleDropClose = () => {
     setAnchorEl(null);
   };
+ const profileW:any=useRef();
+ let[outWidth,setOutWIdth]=useState('260')
+
+  const changeLogOut=()=>{
+    console.log(profileW.current.clientWidth);
+    setOutWIdth(profileW.current.clientWidth);
+  }
+  useEffect(
+    ()=>{
+      console.log(outWidth);
+    },[outWidth]
+  )
 
   return (
     <section className='container-header'>
@@ -33,6 +46,7 @@ const Header: React.FC = () => {
 </Grid> */}
             <Grid item >
               <Button
+                ref={profileW} 
                 className='btn'
                 id="basic-button"
                 aria-controls={open1 ? 'basic-menu' : undefined}
@@ -43,7 +57,7 @@ const Header: React.FC = () => {
                 startIcon={<Avatar />}
                 disableRipple
               >
-                <p className='title-style'>Ağarəhim Quluzadə</p>
+                <p className='title-style'>Agarehim </p>
               </Button>
               <Menu
                 id="basic-menu"
@@ -55,7 +69,7 @@ const Header: React.FC = () => {
                 onClose={handleDropClose}
                 className="testClass"
               >
-                <MenuItem onClick={handleDropClose}>
+                <MenuItem onClick={handleDropClose} style={{minWidth:'260px',width:`${outWidth}px`}}>
                   <LogoutIcon></LogoutIcon>
                   <p className='logout'>Profildən çıx</p>
                 </MenuItem>
