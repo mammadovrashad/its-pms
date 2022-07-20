@@ -58,7 +58,7 @@ const Combobox = ({ labelName }: any) => {
                     IconComponent={Icon}
                 >
                     {emp.map((name: any) => (
-                        <MenuItem key={name.id} value={name.id} className="comboboxInput-Popover">
+                        <MenuItem key={name.id} value={name.id}>
                             <Checkbox icon={<Check1 />} checkedIcon={<Check />} checked={personName.indexOf(name.id) > -1} />
                             <ListItemText primary={name.label} />
                         </MenuItem>
