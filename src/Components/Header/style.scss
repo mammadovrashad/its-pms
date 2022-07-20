@@ -39,6 +39,9 @@
   cursor: pointer;
   text-transform: none !important;
 }
+// .btn:nth-child(3){
+//   text-align: end;
+// }
 
 
 .testClass {
@@ -46,11 +49,10 @@
       // width: 260px;
       // height: 68px;
       background: #FFFFFF;
-      border: 1px solid $color-inputBorder;
+      border: 1px solid $color-Lightblue;
       box-shadow: 0px 3px 10px rgba(41, 45, 50, 0.06);
       border-radius: 4px;
     }
-
 }
 
 .logout {
