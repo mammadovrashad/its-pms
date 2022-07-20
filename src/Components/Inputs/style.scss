@@ -209,16 +209,16 @@
 .MuiAutocomplete-popper {
 
     li:hover {
-        background-color: $color-comboboxSelect !important;
+        background-color: $color-Lightblue !important;
         color: $color-white;
     }
 
     li:focus {
-        background-color: $color-comboboxSelect !important;
+        background-color: $color-Lightblue !important;
     }
 
     li[aria-selected="true"] {
-        background-color: $color-comboboxSelect !important;
+        background-color: $color-Lightblue !important;
         color: $color-white;
     }
 
@@ -234,7 +234,7 @@
 
     .MuiMenuItem-root:hover,
     .MuiMenuItem-root.Mui-selected {
-        background-color: $color-comboboxSelect !important;
+        background-color: $color-Lightblue !important;
         color: $color-white;
     }
 
@@ -246,6 +246,10 @@
 
     .Mui-checked {
         color: $color-white;
+    }
+
+    .MuiList-root {
+        max-height: 40vh;
     }
 
 }
