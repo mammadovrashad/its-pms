@@ -232,8 +232,6 @@
 // CheckComboBox selected (checked)
 .MuiModal-root .MuiPaper-root {
 
-    max-height: 250px;
-
     .MuiMenuItem-root:hover,
     .MuiMenuItem-root.Mui-selected {
         background-color: $color-comboboxSelect !important;
