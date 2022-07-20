@@ -34,8 +34,8 @@
   text-transform: none !important;
 }
 
-.MuiMenu-root .MuiPopover-paper {
-  width: 260px;
+.testClass .MuiPaper-root {
+  min-width: 260px;
   height: 68px;
   background: #FFFFFF;
   border: 1px solid #068FDB;
