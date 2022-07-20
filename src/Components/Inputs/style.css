@@ -232,4 +232,7 @@
 }
 .MuiModal-root .MuiPaper-root .Mui-checked {
   color: #FFFFFF;
+}
+.MuiModal-root .MuiPaper-root .MuiList-root {
+  max-height: 40vh;
 }/*# sourceMappingURL=style.css.map */
