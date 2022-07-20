@@ -45,6 +45,7 @@ disableRipple
       >
        <p className='title-style'>Ağarəhim Quluzadə</p>
       </Button>
+    <div className='ghj'>
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
@@ -59,6 +60,7 @@ disableRipple
        <p className='logout'>Profildən çıx</p>
         </MenuItem>
       </Menu>
+      </div>
 </Grid>
 </Grid>
 </Grid>
