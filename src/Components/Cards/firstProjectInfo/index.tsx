@@ -10,7 +10,6 @@ import Textarea from '../../Inputs/Textarea';
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
-    padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
 }));
@@ -36,7 +35,7 @@ const FirstProjectInfo: React.FC<{getInputValue:any}> = ({getInputValue}) => {
                         </Grid>
                         <Grid item xs={4}>
                             <Item className='grid-item'>
-                                <MultilineInput labelName='Layihənin kodu' placeholder='№122343244355' charCount='50' readOnly={true}/>
+                                <MultilineInput labelName='Layihənin kodu' placeholder='№122343244355' charCount='50' readOnly={false}/>
                             </Item>
                         </Grid>
                         <Grid item xs={4}>
@@ -46,7 +45,7 @@ const FirstProjectInfo: React.FC<{getInputValue:any}> = ({getInputValue}) => {
                         </Grid>
                         <Grid item xs={12}>
                             <Item className='grid-item'>
-                                <Textarea getInputValue={getInputValue} labelName='Layihənin qısa izahı' maxHeight="64px" maxCharCount='2000' helpertext={true}/>
+                                <Textarea getInputValue={getInputValue} labelName='Layihənin qısa izahı' maxHeight="64px" />
                             </Item>
                         </Grid>
                     </Grid>
