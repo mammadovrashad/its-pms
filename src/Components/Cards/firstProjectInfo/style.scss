@@ -19,4 +19,16 @@
         font-family: Poppins;
         color: $color-Lightblue
     }
+
+    .MuiCardActions-root.card-action {
+        padding: 24px 16px;
+    }
+
+    .MuiGrid-container .MuiGrid-item {
+        padding-top: 0px;
+
+        &:last-child {
+            padding-top: 36px;
+        }
+    }
 }

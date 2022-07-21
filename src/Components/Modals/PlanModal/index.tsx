@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import { Grid } from '@mui/material'
 import './style.css'
 import '../../../Common/Fonts/fonts.css';
-import DisableInput from '../../Inputs/DisableInput';
+// import DisableInput from '../../Inputs/DisableInput';
 import DateInput from '../../Inputs/DateInput';
 import Combobox from '../../Inputs/Combobox';
 import ComboCheckbox from '../../Inputs/ComboCheckbox'
@@ -15,7 +15,7 @@ import AbsoluteCloseButton from '../../Buttons/AbsoluteCloseButton';
 import ContainedButton from '../../Buttons/ContainedButton';
 import DeleteEditButton from '../../Buttons/DeleteEditButton';
 import BasicModal from '..';
-import {emp, stage} from '../../../Pages/firstWindows/index'
+import { emp, stage } from '../../../Pages/firstWindows/index'
 
 type IBtn = {
   edit: Boolean;
@@ -25,12 +25,19 @@ function PlanModal({ edit }: IBtn) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const changePerce = (event: any) => {
+    let value = event.target.value;
+    const inputValue = `${value}%`;
+
+    return inputValue;
+  }
+
   return (
-  
-<React.Fragment>
-<Button onClick={handleOpen}>Plan yarat</Button>
-  <BasicModal open={open}>
-  <Box className='styleplan'>
+
+    <React.Fragment>
+      <Button onClick={handleOpen}>Plan yarat</Button>
+      <BasicModal open={open}>
+        <Box className='styleplan'>
           {!edit && <div className='div-addplan'><AbsoluteCloseButton action={handleClose} /></div>}
           <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
             <Grid container justifyContent='space-between' columnSpacing={2}>
@@ -42,7 +49,7 @@ function PlanModal({ edit }: IBtn) {
             </Grid>
             <Grid container justifyContent='space-between' columnSpacing={2}>
               <Grid item xs={3}><MultilineInput labelName='İcra müddəti' charCount='200' readOnly={false} /></Grid>
-              <Grid item xs={3}><MultilineInput labelName='İcra göstəricisi' charCount='200' readOnly={false} /></Grid>
+              <Grid item xs={3}><MultilineInput labelName='İcra göstəricisi' charCount='200' readOnly={false} changePerce={changePerce} /></Grid>
               <Grid item xs={3}><DateInput labelName='Son icra tarixi' /></Grid>
               <Grid item xs={3}><SelectInput /></Grid>
             </Grid>
@@ -60,9 +67,9 @@ function PlanModal({ edit }: IBtn) {
             </Grid>
           </Grid>
         </Box>
-  </BasicModal>
-</React.Fragment>
-     
+      </BasicModal>
+    </React.Fragment>
+
   );
 }
 export default PlanModal

@@ -15,19 +15,19 @@ const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
 }));
-    
+
 const NewProject: React.FC = () => {
 
     const getInputValue = (event: any) => {
-    
+
         console.log(event.target.value);
-     
+
     }
 
     return (
         <div className='new-project'>
-            <Header/>
-            <Container className='main-container'  style={{padding:'0px', marginTop:'40px'}}>
+            <Header />
+            <Container className='main-container' style={{ padding: '0px', marginTop: '40px' }}>
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={5}>
                         <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -37,22 +37,22 @@ const NewProject: React.FC = () => {
                                 </Typography>
                             </Item>
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid item xs={12} style={{ paddingTop: '32px' }}>
                             <Item className='container-item'>
                                 <FirstProjectInfo getInputValue={getInputValue} />
                             </Item>
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid item xs={12} style={{ paddingTop: '24px', paddingBottom: '32px' }}>
                             <Item className='container-item' style={{ justifyContent: 'flex-end' }}>
                                 <ContainedButton text='Yeni Layihə Yarat' variantName='contained' paddingSize="16px 32px" maxWidth="202px" />
                             </Item>
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid item xs={12} style={{ paddingTop: '0' }}>
                             <Item className='container-item'>
                                 <CreateNewTeam />
                             </Item>
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid item xs={12} style={{ paddingTop: '32px', paddingBottom: '48px' }}>
                             <Item className='container-item'>
                                 <CreatePlan />
                             </Item>
