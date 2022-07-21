@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import {Grid } from '@mui/material'
+import { Grid } from '@mui/material'
 import './style.css'
 import '../../../Common/Fonts/fonts.css';
 import AddMemberTable from '../../Tables/addMemberTable'
@@ -19,18 +19,18 @@ const AddMemberModal: React.FC = () => {
   const handleClose = () => setOpen(false);
 
   return (
-   <React.Fragment>
+    <React.Fragment>
       <Button onClick={handleOpen}>Komanda yarat</Button>
-     <BasicModal open={open}> 
-    <Box className='styleaddMember'>
-        <div className='div-addmember'><AbsoluteCloseButton action={handleClose} /></div>
+      <BasicModal open={open}>
+        <Box className='styleaddMember'>
+          <div className='div-addmember'><AbsoluteCloseButton action={handleClose} /></div>
           <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
             <Grid item xs={12}>
               <h1 className='title1'>Komanda üzvü əlavə et</h1>
             </Grid>
             <Grid container columnSpacing={3} justifyContent='space-between' >
               <Grid item xs={5} ><Combobox labelName='Rol' placeholder='Front-End' position={position} /></Grid>
-              <Grid item xs={5} ><ComboCheckbox labelName="Əməkdaş" /></Grid>
+              <Grid item xs={5} ><Combobox labelName="Əməkdaş" position={emp} /></Grid>
               <Grid item >
                 <ActionButton />
               </Grid>
@@ -39,14 +39,14 @@ const AddMemberModal: React.FC = () => {
               <AddMemberTable />
             </Grid>
             <Grid container columnSpacing={2} justifyContent='flex-end'>
-            <Grid item >
-        <ContainedButton text='Yadda saxla' variantName='contained' paddingSize='16px 32px 16px 32px'/>
-            </Grid> 
-         </Grid>
-         </Grid>
-         </Box>
-         </BasicModal>
-   </React.Fragment>
+              <Grid item >
+                <ContainedButton text='Yadda saxla' variantName='contained' paddingSize='16px 32px 16px 32px' />
+              </Grid>
+            </Grid>
+          </Grid>
+        </Box>
+      </BasicModal>
+    </React.Fragment>
   );
 }
 export default AddMemberModal

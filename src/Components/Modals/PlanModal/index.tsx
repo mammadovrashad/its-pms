@@ -34,7 +34,7 @@ function PlanModal({ edit }: IBtn) {
           {!edit && <div className='div-addplan'><AbsoluteCloseButton action={handleClose} /></div>}
           <Grid container alignItems='center' sx={{ width: '100%', height: '100%' }}>
             <Grid container justifyContent='space-between' columnSpacing={2}>
-              <Grid item xs={2.4}><DisableInput labelName='Task nömrəsi' defaultValue='1.2' /></Grid>
+              <Grid item xs={2.4}><MultilineInput labelName='Task nömrəsi' placeholder="1.2" charCount='200' readOnly={false} /></Grid>
               <Grid item xs={2.4}><Combobox labelName='Mərhələ' placeholder='Mərhələ' position={stage} /></Grid>
               <Grid item xs={2.4}><ComboCheckbox labelName="İcraçı" /></Grid>
               <Grid item xs={2.4}><DateInput labelName='Başlama tarixi' /></Grid>
