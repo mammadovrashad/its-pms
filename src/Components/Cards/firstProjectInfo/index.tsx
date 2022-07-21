@@ -21,7 +21,7 @@ const FirstProjectInfo: React.FC<{getInputValue:any}> = ({getInputValue}) => {
             <BasicCard>
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>
-                        <Grid item xs={12}>
+                        <Grid item xs={12} style={{paddingBottom: '36px'}}>
                             <Item className='grid-item'>
                                 <Typography className='info-text'>
                                     İlkin layihə məlumatları
