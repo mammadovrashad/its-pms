@@ -13,7 +13,7 @@ const MultilineInput = ({ labelName, placeholder, charCount, readOnly }: any) =>
             id="outlined-textarea"
             label={labelName}
             placeholder={placeholder}
-            multiline
+            // multiline
             fullWidth
             className="MultilineInput"
             inputProps={{ maxLength: charCount, readOnly }}
