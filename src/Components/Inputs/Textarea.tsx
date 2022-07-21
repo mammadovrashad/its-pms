@@ -8,21 +8,30 @@ import {
 // Style
 import './style.scss';
 
-const Textarea = ({ labelName, maxCharCount, helpertext, maxHeight }: any) => {
+const Textarea = ({ labelName, maxCharCount, helpertext, maxHeight, getInputValue }: any) => {
 
     const [char, setChar] = useState("");
+
+    const changeState = (event: any) => {
+        const { value } = event.target;
+        setChar(value);
+    }
+
+    const allOnChange = (event: any) => {
+        changeState(event);
+        getInputValue(event);
+    }
 
     return (
         <TextField
             id="outlined-textarea"
-            helperText={helpertext ? `${char.length}/${maxCharCount}` : "" }
-            sx={[{".MuiOutlinedInput-input": {height: `${maxHeight} !important`}}]}
+            helperText={helpertext ? `${char.length}/${maxCharCount}` : ""}
+            sx={[{ ".MuiOutlinedInput-input": { height: `${maxHeight} !important` } }]}
             inputProps={{ maxLength: maxCharCount }}
             value={char}
-            onChange={(event) =>{
-                const { value } = event.target;
-                setChar(value);
-            }}
+            onChange={
+                allOnChange
+            }
             label={labelName}
             fullWidth
             multiline

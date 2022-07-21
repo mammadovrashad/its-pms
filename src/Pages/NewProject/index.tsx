@@ -16,8 +16,15 @@ const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
 }));
-
+    
 const NewProject: React.FC = () => {
+
+    const getInputValue = (event: any) => {
+    
+        console.log(event.target.value);
+     
+    }
+
     return (
         <div className='new-project'>
             <Header/>
@@ -33,7 +40,7 @@ const NewProject: React.FC = () => {
                         </Grid>
                         <Grid item xs={12}>
                             <Item className='container-item'>
-                                <FirstProjectInfo />
+                                <FirstProjectInfo getInputValue={getInputValue} />
                             </Item>
                         </Grid>
                         <Grid item xs={12}>

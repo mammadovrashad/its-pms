@@ -15,7 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 }));
 
-const FirstProjectInfo: React.FC = () => {
+const FirstProjectInfo: React.FC<{getInputValue:any}> = ({getInputValue}) => {
 
     return (
         <div className='first-project-info'>
@@ -46,7 +46,7 @@ const FirstProjectInfo: React.FC = () => {
                         </Grid>
                         <Grid item xs={12}>
                             <Item className='grid-item'>
-                                <Textarea labelName='Layihənin qısa izahı' maxHeight="64px"/>
+                                <Textarea getInputValue={getInputValue} labelName='Layihənin qısa izahı' maxHeight="64px" maxCharCount='2000' helpertext={true}/>
                             </Item>
                         </Grid>
                     </Grid>
