@@ -61,7 +61,7 @@ const Header: React.FC = () => {
               >
                 <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
                   <Avatar  />
-                  <p style={{marginLeft:"16px"}} className='title-style'>Fddddddddddd</p>
+                  <p style={{marginLeft:"16px"}} className='title-style'>Agarehim Quluzade</p>
                 </div>
                 <div className="out-icon">
                   <ExpandMoreIcon sx={{ color: 'black', transform: 'translateX(30%)' }} />
